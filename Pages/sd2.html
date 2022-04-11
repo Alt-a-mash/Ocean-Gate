@@ -1,0 +1,662 @@
+<!Doctype html>
+<html lang="en">
+
+<!--Head Open-->
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+ <link rel="icon" href="../images/Logo.jpg" type="image" sizes="5x5">
+
+
+<!--Style Tag Open-->
+ <style>
+footer:hover{ opacity:0.9;}
+
+  video#bg2 {
+
+		position:fixed;
+ 		left: 0;
+		bottom: 0px;
+
+		min-width: 100%;
+		min-height: 100%px;
+
+		width: auto;
+		height: auto;
+ 		z-index: -100;
+
+		background: url(Black.png) no-repeat;
+
+		background-size: cover;
+
+		}
+
+  a:link{ color:rgba(255,255,255,1);}
+  a:visited{ color:white;}
+  a:hover{ text-decoration:none;}
+  .goo:hover{ color:orangered;}
+  .face:hover{ color:darkblue;}
+  .insta:hover{ color:purple;}
+  .pin:hover{ color:maroon;}
+  .you:hover{ color:red;}
+  .gg{ background-color:rgba(255,255,255,0.4);}
+  .gg:hover{ background-color:rgba(0,0,0,0.4);}
+  .ani{ color:white;}
+  .ani:hover{ background-color:white; color:black;}
+  h1:hover{background-color:rgba(0,0,0,0.6); border-bottom:1px solid red;}
+  footer{ color:white; font-size:16px; bottom:0px; positon:fixed;}
+  input{border:none;}
+  .whew{background-color:rgba(0,0,0,0.4); color:white; border:2px solid rgba(255,255,255,0.6);}
+  .whew:hover{background-color:white; color:black; border:2px solid rgba(0,0,0,0.6);}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+
+.animated05 {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-delay:0.5s;}
+
+.animated1 {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-delay:1s;}
+
+.animated15 {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-delay:1.5s;}
+
+.animated2 {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-delay:2s;}
+
+.animated25 {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-delay:2.5s;}
+
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes lightSpeedIn {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
+    transform: translate3d(100%, 0, 0) skewX(-30deg);
+    opacity: 0;
+  }
+
+  60% {
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: skewX(-5deg);
+    transform: skewX(-5deg);
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes lightSpeedIn {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
+    transform: translate3d(100%, 0, 0) skewX(-30deg);
+    opacity: 0;
+  }
+
+  60% {
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: skewX(-5deg);
+    transform: skewX(-5deg);
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.lightSpeedIn {
+  -webkit-animation-name: lightSpeedIn;
+  animation-name: lightSpeedIn;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+}
+
+@-webkit-keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInUp {
+  -webkit-animation-name: slideInUp;
+  animation-name: slideInUp;
+}
+
+
+<!--Dropdown Hover Button-->
+
+.btn {
+    background-color:rgba(0,0,0,0);
+    color: white;
+    padding:20px;
+    font-size: 30px;
+}
+
+.down {
+    position: relative;
+    display: inline-block;
+}
+
+.down-content {margin-left:230px; display: none; position: absolute; background-color: black; min-width: 160px; box-shadow: 0px 8px 16px 0px rgba(255,0,0,0.2); z-index: 1;}
+
+.down-content a { box-shadow: 0px 8px 16px 0px rgba(255,0,0,0.2); color: white; text-decoration: none; display: block; padding:10px;}
+
+.down-content a:hover {background-color: white; color:black;}
+
+.down:hover .down-content {display: block;}
+
+.down:hover .btn { color:rgba(255,255,255,1);}
+
+
+  
+.img{border-radius:20px;}
+.abc{ background-color:rgba(255,255,255,0.2); color:white; border:1px solid rgba(255,255,255,0.6);}
+img { display: block; margin:auto;}
+.img:hover{
+box-shadow:2px 2px 2px black;
+ border-bottom:1px solid red;
+}
+
+
+ </style>
+<!--Style Tag Closed-->
+
+</head>
+<!--Head Closed-->
+
+<!--Body Opening-->
+<body style="font-family:century gothic; background-color:black">
+
+ <title>Sd Cards | Ocean Gate Limited(OC)</title>
+
+<!--Background Video-->
+<video autoplay loop muted poster="Black.png" id="bg2">
+<source src="../videos/Black.mp4">
+</video>
+
+<!--Container Open-->
+  <div class="container-fluid">
+
+<!--Logo-->
+ <a href="OGL.html"><img src="../images/Logo1.png" class="infront animated lightSpeediIn" alt="No image found" title="Ocean Gate Limited" style=" position:fixed; height:100px; width:100px; right:0px;"></a><br>
+
+<!--Menu Nav Bar Modal-->
+   <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#menu" style=" z-index:1; position:fixed; border:2px solid rgba(0,0,0,0); background-color:rgba(0,0,0,0); color:white; font-size:60px;"><i class="fa fa-empire fa-spin"></i></button>
+   <!-- Modal -->
+  <div class="modal animated lightSpeedIn" id="menu" role="dialog">
+   <div class="modal-dialog modal-lg" style="width:75%;">
+    <!-- Modal content-->
+    <div class="modal-content" style=" height:550px; background-image:url(../images/abstrac.jpg); color:white; border:1px solid rgba(255,255,255,0.6);">
+     <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" style="color:white; font-size:30px;"><span class="glyphicon glyphicon-off"></span></button>
+      <h4 class="modal-title" style="font-size:60px;"><b><a href="../Index.html" class="ani"><i class="fa fa-university"></i>Menu</a></b></h4>
+     </div>
+     <div class="modal-body">
+      <div class="navbar-header">
+       <ul class="nav navbar-nav" style=" font-size:20px;"><b>
+        <li><a href="OGL.html" class="ani" style="font-size:30px; margin-left:13px;"><span class="glyphicon glyphicon-king"></span>Ocean Gate</a></li><br>
+        <li><div class="down"> <button class="btn" style="font-size:30px; background-color:rgba(0,0,0,0);"><b> <span class="glyphicon glyphicon-queen"></span>Storage Devices </b></button>
+	<div class="down-content">
+	<a href="cd.html">CD ROMs</a>
+	<a href="hdd.html">Hard Disk Drives</a>
+	<a href="usb.html">USBs</a>
+	<a href="ssd.html">Solid State Drives</a>
+	<a href="sd.html">SD Cards</a>
+	</div> </div> </li><br>
+<li><a href="compare.html" class="ani" style="font-size:30px; margin-left:13px;"><span class="glyphicon glyphicon-pawn"></span>Comparison</a></li><br>
+<li><a href="Repair.html" class="ani" style="font-size:30px; margin-left:13px;"><span class="glyphicon glyphicon-pawn"></span>Easy Repair</a></li><br>
+        <li><a href="Contact.html" class="ani" style="font-size:30px; margin-left:13px;"><span class="glyphicon glyphicon-knight"></span>Contact Us</a></li><br>
+        <li><a href="Feedback.html" class="ani" style="font-size:30px; margin-left:13px;"><span class="glyphicon glyphicon-bishop"></span>Feedback</a></li><br>
+        
+       </b></ul>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+<!--Title-->
+<h1 class="animated lightSpeedIn" style="text-align:center; font-size:100px; color:white; margin-top:200px"><b> Ocean Gate Limited </b></h1>
+<h1 class="animated05 lightSpeedIn" style="text-align:center; font-size:60px; color:white;"> Gate To The Ocean Of Storage </h1>
+
+<!--Container Open-->
+<div class="container animated05 lightSpeedIn">
+
+<h1 style="color:white; text-align:center; font-size:60px; margin-top:300px;"> SD CARDSs </h1><br><br>
+
+</div>
+<!--Container Closed-->
+
+
+<!--Container Open-->
+<div class="container animated1 lightSpeedIn">
+
+
+
+<!----1st pic--->
+
+    <div  class="col-sm-4 img" style=" background-color:rgba(255,255,255,0.2); color:white; border:1px solid rgba(255,255,255,0.6); text-align:center;">
+
+<a target="_top" href="../images/ssd2.jpg"><img src="../images/d1.jpg" class="img-responsive" style="height:200px; width:200px"></a> 40.5$
+<button type="button" class="btn btn-info btn-lg whew" data-toggle="modal" data-target="#myModal">Details</button></div>
+
+<!----2nd pic--->
+
+   <div  class="col-sm-4 img"  style=" background-color:rgba(255,255,255,0.2); color:white; border:1px solid rgba(255,255,255,0.6); text-align:center;">
+
+<a target="_self" href="../images/2.jpg"><img src="../images/d2.jpg" class="img-responsive" style="height:200px; width:200px"></a><b> 300.0$</b>
+<button type="button" class="btn btn-info btn-lg whew" data-toggle="modal" data-target="#myModal1">Details</button></div>
+
+
+<!----3rd pic--->
+
+   <div  class="col-sm-4 img"  style=" background-color:rgba(255,255,255,0.2); color:white; border:1px solid rgba(255,255,255,0.6); text-align:center;">
+<a target="_self" href="../images/ssdsandisk.JPG"><img src="../images/d3.JPG" class="img-responsive" style="height:200px; width:200px"></a> <b>200.0$</b>
+<button type="button" class="btn btn-info btn-lg whew" data-toggle="modal" data-target="#myModal2">Details</button></div>
+
+
+
+  <!-- container end-->
+
+</div>
+
+<br> <br>
+
+
+<div class="container animated15 lightSpeedIn">
+  
+<!----4th pic--->
+
+    <div  class="col-sm-4 img"  style=" background-color:rgba(255,255,255,0.2); color:white; border:1px solid rgba(255,255,255,0.6); text-align:center;">
+<a target="_top" href="../images/1.jpg"><img src="../images/d4.jpg" class="img-responsive" style="height:200px; width:200px"></a> <b>60.5$</b>
+<button type="button" class="btn btn-info btn-lg whew" data-toggle="modal" data-target="#myModal3">Details</button></div>
+
+
+<!----5th pic--->
+
+   <div  class="col-sm-4 img"  style=" background-color:rgba(255,255,255,0.2); color:white; border:1px solid rgba(255,255,255,0.6); text-align:center;">
+
+<a target="_self" href="../images/5.jpg"><img src="../images/d5.jpg" class="img-responsive" style="height:200px; width:200px"></a> <b>89.0$</b>
+<button type="button" class="btn btn-info btn-lg whew" data-toggle="modal" data-target="#myModal4">Details</button></div>
+
+
+<!----6th pic--->
+
+   <div  class="col-sm-4 img"  style=" background-color:rgba(255,255,255,0.2); color:white; border:1px solid rgba(255,255,255,0.6); text-align:center;"> 
+
+<a target="_self" href="../images/t1.JPG"><img src="../images/d6.JPG" class="img-responsive" style="height:200px; width:200px"></a><b> 90.0$</b>
+<button type="button" class="btn btn-info btn-lg whew" data-toggle="modal" data-target="#myModal5">Details</button></div>
+
+
+
+  <!-- container end-->
+
+</div>
+
+
+<br> <br>
+
+
+<div class="container animated2 lightSpeedIn">
+  
+<!----7th pic--->
+
+    <div  class="col-sm-4 img"  style=" background-color:rgba(255,255,255,0.2); color:white; border:1px solid rgba(255,255,255,0.6); text-align:center;">
+<a target="_top" href="../images/s1.jpg"><img src="../images/d7.jpg" class="img-responsive" style="height:200px; width:200px"></a> <b>115.5$</b>
+<button type="button" class="btn btn-info btn-lg whew" data-toggle="modal" data-target="#myModal6">Details</button></div>
+
+
+<!----8th pic--->
+
+   <div  class="col-sm-4 img"  style=" background-color:rgba(255,255,255,0.2); color:white; border:1px solid rgba(255,255,255,0.6); text-align:center;">
+<a target="_self" href="../images/p1.jpg"><img src="../images/d8.jpg" class="img-responsive" style="height:200px; width:200px"></a> <b>167.0$</B>
+<button type="button" class="btn btn-info btn-lg whew" data-toggle="modal" data-target="#myModal7">Details</button></div>
+
+
+<!----9th pic--->
+
+   <div  class="col-sm-4 img"  style=" background-color:rgba(255,255,255,0.2); color:white; border:1px solid rgba(255,255,255,0.6); text-align:center;">
+<a target="_self" href="../images/l1.JPG"><img src="../images/d9.JPG" class="img-responsive" style="height:200px; width:200px"></a> <B>70.0$</b>
+<button type="button" class="btn btn-info btn-lg whew" data-toggle="modal" data-target="#myModal8">Details</button></div>
+
+
+</div>
+<!--Container Closed-->
+
+
+<!--Container Open-->
+<div class="container" style=" margin-left:550px;">
+<a href="sd.html"><h1 class="gg animated25 lightSpeedIn" style="width:20%; height:30px; text-align:center; font-size:20px; border-radius:10px; color:red;"><b> Previous Page... </b></h1></a>
+</div>
+<!--Container Closed-->
+
+
+<!--Modals-->
+
+
+  <!-- 9Modal -->
+  <div class="modal animated lightSpeedIn" id="myModal8" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content" style=" background-image:url(../images/abstrac.jpg); color:white;">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span class="glyphicon glyphicon-off"></span> </button>
+          <h4 class="modal-title">Details</h4>
+        </div>
+        <div class="modal-body">
+          <p><h3>alpha digital 2gb sd card </h3>
+<div class="img"><img src="../images/d9.JPG" style="width:200px; height:200px;"/></div>
+<br> <div class="zinger"></div>
+</p>
+        
+      </div>
+      
+    </div>
+  </div>
+
+  </div>
+
+  <!-- 8Modal -->
+  <div class="modal animated lightSpeedIn" id="myModal7" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content" style=" background-image:url(../images/abstrac.jpg); color:white;">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span class="glyphicon glyphicon-off"></span> </button>
+          <h4 class="modal-title">Details</h4>
+        </div>
+        <div class="modal-body">
+          <p><h3> </h3>
+<div class="img"><img src="../images/d8.jpg" style="width:200px; height:200px;"/></div>
+<br> <div class="zinger"></div>
+</p>
+        
+      </div>
+      
+    </div>
+  </div>
+
+  </div>
+
+  <!-- 7Modal -->
+  <div class="modal animated lightSpeedIn" id="myModal6" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content" style=" background-image:url(../images/abstrac.jpg); color:white;">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span class="glyphicon glyphicon-off"></span> </button>
+          <h4 class="modal-title">Details</h4>
+        </div>
+        <div class="modal-body">
+          <p><h3>2GB Mini SD Adapter Memory card MiniSD 2GB Phone card</h3>
+<div class="img"><img src="../images/d7.jpg" style="width:200px; height:200px;"/></div>
+<br> <div class="zinger">
+ </div>
+</p>
+        
+        
+      </div>      
+    </div>
+  </div>
+
+  </div>
+
+  <!-- 6Modal -->
+  <div class="modal animated lightSpeedIn" id="myModal5" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content" style=" background-image:url(../images/abstrac.jpg); color:white;">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span class="glyphicon glyphicon-off"></span> </button>
+          <h4 class="modal-title">Details</h4>
+        </div>
+        <div class="modal-body">
+          <p><h3> onefavor sd card </h3>
+<div class="img"><img src="../images/d6.JPG" style="width:200px; height:200px;"/></div>
+<br> <div class="zinger"> </div>
+</p>
+        
+      </div>
+      
+    </div>
+  </div>
+
+  </div>
+
+  <!-- 5Modal -->
+  <div class="modal animated lightSpeedIn" id="myModal4" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content" style=" background-image:url(../images/abstrac.jpg); color:white;">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span class="glyphicon glyphicon-off"></span> </button>
+          <h4 class="modal-title">Details</h4>
+        </div>
+        <div class="modal-body">
+          <p><h3>Toshiba 2GB Class2 SD-M02G SD Card</h3>
+<div class="img"><img src="../images/d5.jpg" style="width:200px; height:200px;"/></div>
+<br> <div class="zinger">
+
+</div>
+</p>
+        
+      </div>
+      
+    </div>
+  </div>
+
+  </div>
+
+  <!-- 4Modal -->
+  <div class="modal animated lightSpeedIn" id="myModal3" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content" style=" background-image:url(../images/abstrac.jpg); color:white;">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span class="glyphicon glyphicon-off"></span> </button>
+          <h4 class="modal-title">Details</h4>
+        </div>
+        <div class="modal-body">
+          <p><h3>Sandisk Full Size Sd Memory Card 2GB CLEAN TESTED FORMATTED 2.0GB</h3>
+<div class="img"><img src="../images/d4.jpg" style="width:200px; height:200px;"/></div>
+<br> <div class="zinger">ZAR 90.30From United KingdomBuy It Now+ZAR 45.24 shipping .</div>
+</p>
+        
+        
+      </div>
+      
+    </div>
+  </div>
+
+  </div>
+
+  <!--3 Modal -->
+  <div class="modal animated lightSpeedIn" id="myModal2" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content" style=" background-image:url(../images/abstrac.jpg); color:white;">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span class="glyphicon glyphicon-off"></span> </button>
+          <h4 class="modal-title">Details</h4>
+        </div>
+        <div class="modal-body">
+          <p><h3>2GB SD Memory Card For TomTom Toyota Aygo Connect Multimedia GPS</h3>
+<div class="img"><img src="../images/d3.jpg" style="width:200px; height:200px;"/></div>
+<br> <div class="zinger">ZAR 180.05From United KingdomBuy It Now+ZAR 53.38 shipping</div>
+</p>
+        
+      </div>
+      
+    </div>
+  </div>
+
+  </div>
+
+  <!-- 2Modal -->
+  <div class="modal animated lightSpeedIn" id="myModal1" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content" style=" background-image:url(../images/abstrac.jpg); color:white;">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span class="glyphicon glyphicon-off"></span> </button>
+          <h4 class="modal-title">Details</h4>
+        </div>
+        <div class="modal-body">
+          <p><h3>Transcend 2 GB SD Flash Memory Card (TS2GSDC)</h3>
+<div class="img"><img src="../images/d2.jpg" style="width:200px; height:200px;"/></div>
+<br> <div class="zinger"></div>
+</p>
+        
+      </div>
+      
+    </div>
+  </div>
+
+  </div>
+
+  <!--1 Modal -->
+  <div class="modal animated lightSpeedIn" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content" style=" background-image:url(../images/abstrac.jpg); color:white;">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span class="glyphicon glyphicon-off"></span> </button>
+          <h4 class="modal-title">Details</h4>
+        </div>
+        <div class="modal-body">
+          <p><h3>Spin Custom USB Flash Drive </h3>
+<div class="img"><img src="../images/d1.jpg" style="width:200px; height:200px;"/></div>
+<br> <div class="zinger"> Put a new spin on your company's branding efforts with this Spin customized flash drive that literally puts your company logo into the hands of potential and existing customers. This personalized flash drive is the most popular drive we sell for a reason - it has a simple capless design that is easy to use and is available in a range of different capacities for different needs.</div>
+
+</p>
+        
+        
+      </div>
+      
+    </div>
+  </div>
+
+  </div>
+
+
+<!--Modals-->
+
+
+<!--Footer Open-->
+ <footer style=" background-image:url('../images/abstract.jpg'); background-size:cover; width:100%; height:240px;" class="animated slideInUp">
+
+<h1 style=" text-align:center; font-size:30px;">Ocean Gate Limited</h1><br>
+
+<form style="text-align:center;">
+<input type="text" id="emailaddress" size="50" required name="emailaddress" required placeholder=" Write your message here..." style=" border-radius:10px; height:50px; background-color:rgba(0,0,0,0.6); border-bottom:2px solid white; color:white;">
+<input type="submit" value="Send" style="height:50px; width:100px; border-radius:10px; border-bottom:2px solid white; color:red;background-color:rgba(0,0,0,0.6);"></a>
+</form>
+
+<div style=" font-family:comic sans MS, cursive, sans-serif; position:relative; margin-left:20px; margin-right:20px; margin-top:50px;">
+  <div style="float:left;">
+   <b style="font-size:18px;">All rights reserved, "Ocean Gate Limited."</b><br>
+   <b style="font-size:18px;">Copyright <i class="fa fa-copyright"></i> 2018</b>
+  </div>
+
+<div style="float:left; margin-left:200px;">
+<a href="Terms.html" target="_blank" style="font-size:25px;">Terms and Conditions!</a>
+</div>
+
+  <div style="float:right;">
+   <b style="font-size:18px;">Connect with us on</b><br>
+   <a href="mailto:aaltamashking@gmail.com" target:"_blank" class="goo" style="margin-left:10px;"><i class="fa fa-envelope-o"></i></a>
+   <a href="https://www.facebook.com/" target="_blank" class="face" style="margin-left:10px;"><i class="fa fa-facebook"></i></a>
+   <a href="https://www.instagram.com/" target="_blank" class="insta" style="margin-left:10px;"><i class="fa fa-instagram"></i></a>
+   <a href="https://www.pinterest.com/" target="_blank" class="pin" style="margin-left:10px;"><i class="fa fa-pinterest-p"></i></a>
+   <a href="https://www.youtube.com/" target="_blank" class="you" style="margin-left:10px;"><i class="fa fa-youtube"></i></a>
+  </div>
+</div>
+
+
+ </footer>
+<!--Footer Closed-->
+
+
+</body>
+<!--Body Closed-->
+
+</html>

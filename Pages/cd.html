@@ -1,0 +1,815 @@
+<!Doctype html>
+<html lang="en">
+
+<!--Head Open-->
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+ <link rel="icon" href="../images/Logo.jpg" type="image" sizes="5x5">
+
+
+<!--Style Tag Open-->
+ <style>
+footer:hover{ opacity:0.9;}
+
+  video#bg2 {
+
+		position:fixed;
+ 		left: 0;
+		bottom: 0px;
+
+		min-width: 100%;
+		min-height: 100%px;
+
+		width: auto;
+		height: auto;
+ 		z-index: -100;
+
+		background: url(Black.png) no-repeat;
+
+		background-size: cover;
+
+		}
+
+  a:link{ color:rgba(255,255,255,1);}
+  a:visited{ color:white;}
+  .goo:hover{ color:orangered;}
+  .face:hover{ color:darkblue;}
+  .insta:hover{ color:purple;}
+  .pin:hover{ color:maroon;}
+  .you:hover{ color:red;}
+  .ani{ color:white;}
+  .ani:hover{ background-color:white; color:black;}
+  h1:hover{background-color:rgba(0,0,0,0.6); border-bottom:1px solid red;}
+  footer{ color:white; font-size:16px; bottom:0px; positon:fixed;}
+  input{border:none;}
+  .whew{background-color:rgba(0,0,0,0.4); color:white; border:2px solid rgba(255,255,255,0.6);}
+  .whew:hover{background-color:white; color:black; border:2px solid rgba(0,0,0,0.6);}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+
+.animated05 {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-delay:0.5s;}
+
+.animated1 {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-delay:1s;}
+
+.animated15 {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-delay:1.5s;}
+
+.animated2 {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-delay:2s;}
+
+.animated25 {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-delay:2.5s;}
+
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes lightSpeedIn {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
+    transform: translate3d(100%, 0, 0) skewX(-30deg);
+    opacity: 0;
+  }
+
+  60% {
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: skewX(-5deg);
+    transform: skewX(-5deg);
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes lightSpeedIn {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
+    transform: translate3d(100%, 0, 0) skewX(-30deg);
+    opacity: 0;
+  }
+
+  60% {
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: skewX(-5deg);
+    transform: skewX(-5deg);
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.lightSpeedIn {
+  -webkit-animation-name: lightSpeedIn;
+  animation-name: lightSpeedIn;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+}
+
+@-webkit-keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInUp {
+  -webkit-animation-name: slideInUp;
+  animation-name: slideInUp;
+}
+
+
+<!--Dropdown Hover Button-->
+
+.btn {
+    background-color:rgba(0,0,0,0);
+    color: white;
+    padding:20px;
+    font-size: 30px;
+}
+
+.down {
+    position: relative;
+    display: inline-block;
+}
+
+.down-content {margin-left:230px; display: none; position: absolute; background-color: black; min-width: 160px; box-shadow: 0px 8px 16px 0px rgba(255,0,0,0.2); z-index: 1;}
+
+.down-content a { box-shadow: 0px 8px 16px 0px rgba(255,0,0,0.2); color: white; text-decoration: none; display: block; padding:10px;}
+
+.down-content a:hover {background-color: white; color:black;}
+
+.down:hover .down-content {display: block;}
+
+.down:hover .btn { color:rgba(255,255,255,1);}
+
+
+  
+.img{border-radius:20px;}
+.abc{ background-color:rgba(255,255,255,0.2); color:white; border:1px solid rgba(255,255,255,0.6);}
+img { display: block; margin:auto;}
+.img:hover{
+box-shadow:2px 2px 2px black;
+ border-bottom:1px solid red;
+}
+
+
+ </style>
+<!--Style Tag Closed-->
+
+</head>
+<!--Head Closed-->
+
+<!--Body Opening-->
+<body style="font-family:century gothic; background-color:black">
+
+ <title>Cd Roms | Ocean Gate Limited(OC)</title>
+
+<!--Background Video-->
+<video autoplay loop muted poster="Black.png" id="bg2">
+<source src="../Videos/Black.mp4">
+</video>
+
+<!--Container Open-->
+  <div class="container-fluid">
+
+<!--Logo-->
+ <a href="OGL.html"><img src="../images/Logo1.png" class="infront animated lightSpeediIn" alt="No image found" title="Ocean Gate Limited" style=" position:fixed; height:100px; width:100px; right:0px;"></a><br>
+
+<!--Menu Nav Bar Modal-->
+   <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#menu" style="position:fixed; border:2px solid rgba(0,0,0,0); background-color:rgba(0,0,0,0); color:white; font-size:60px; z-index:1;"><i class="fa fa-empire fa-spin"></i></button>
+   <!-- Modal -->
+  <div class="modal animated lightSpeedIn" id="menu" role="dialog">
+   <div class="modal-dialog modal-lg" style="width:75%;">
+    <!-- Modal content-->
+    <div class="modal-content" style=" height:560px; background-image:url(../images/abstrac.jpg); color:white; border:1px solid rgba(255,255,255,0.6);">
+     <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" style="color:white; font-size:30px;"><span class="glyphicon glyphicon-off"></span></button>
+      <h4 class="modal-title" style="font-size:60px;"><b><a href="../Index.html" class="ani"><i class="fa fa-university"></i>Menu</a></b></h4>
+     </div>
+     <div class="modal-body">
+      <div class="navbar-header">
+       <ul class="nav navbar-nav" style=" font-size:20px;"><b>
+        <li><a href="OGL.html" class="ani" style="font-size:30px; margin-left:13px;"><span class="glyphicon glyphicon-king"></span>Ocean Gate</a></li><br>
+        <li><div class="down"> <button class="btn" style="font-size:30px; background-color:rgba(0,0,0,0);"><b> <span class="glyphicon glyphicon-queen"></span>Storage Devices </b></button>
+	<div class="down-content">
+	<a href="cd.html">CD ROMs</a>
+	<a href="hdd.html">Hard Disk Drives</a>
+	<a href="usb.html">USBs</a>
+	<a href="ssd.html">Solid State Drives</a>
+	<a href="sd.html">SD Cards</a>
+	</div> </div> </li><br>
+        <li><a href="Compare.html" class="ani" style="font-size:30px; margin-left:13px;"><span class="glyphicon glyphicon-pawn"></span>Comparison</a></li><br>
+        <li><a href="Repair.html" class="ani" style="font-size:30px; margin-left:13px;"><span class="glyphicon glyphicon-pawn"></span>Easy Repair</a></li><br>
+        <li><a href="Contact.html" class="ani" style="font-size:30px; margin-left:13px;"><span class="glyphicon glyphicon-knight"></span>Contact Us</a></li><br>
+        <li><a href="Feedback.html" class="ani" style="font-size:30px; margin-left:13px;"><span class="glyphicon glyphicon-bishop"></span>Feedback</a></li><br>
+        
+       </b></ul>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+<!--Title-->
+<h1 class="animated lightSpeedIn" style="text-align:center; font-size:100px; color:white; margin-top:200px"><b> Ocean Gate Limited </b></h1>
+<h1 class="animated05 lightSpeedIn" style="text-align:center; font-size:60px; color:white;"> Gate To The Ocean Of Storage </h1>
+
+<!--Container Open-->
+<div class="container animated05 lightSpeedIn">
+
+<h1 style="color:white; text-align:center; font-size:60px; margin-top:300px;"> CD ROMs </h1><br><br>
+
+</div>
+<!--Container Closed-->
+
+
+<!--Container Open-->
+<div class="container animated1 lightSpeedIn">
+
+<!----1st pic--->
+
+    <div  class="col-sm-4 img" style=" background-color:rgba(255,255,255,0.2); color:white; border:1px solid rgba(255,255,255,0.6); text-align:center;"> 
+
+<a target="_top" href="../images/c1.jpg"><img src="../images/c1.jpg" class="img-responsive" style="height:200px; width:200px"></a>
+<b>220.5$</b>
+<button type="button" class="btn btn-info btn-lg whew" data-toggle="modal" data-target="#myModal">Details</button></div>
+
+<!----2nd pic--->
+
+   <div  class="col-sm-4 img" style=" background-color:rgba(255,255,255,0.2); color:white; border:1px solid rgba(255,255,255,0.6); text-align:center;"> 
+
+<a target="_self" href="../images/c3.jpg"><img src="../images/c3.jpg" class="img-responsive" style="height:200px; width:200px"></a><b> 100.0$</b>
+<button type="button" class="btn btn-info btn-lg whew" data-toggle="modal" data-target="#myModal1">Details</button></div>
+
+<!----3rd pic--->
+
+   <div  class="col-sm-4 img" style=" background-color:rgba(255,255,255,0.2); color:white; border:1px solid rgba(255,255,255,0.6); text-align:center;"> 
+
+<a target="_self" href="../images/c2.JPG"><img src="../images/c2.JPG" class="img-responsive" style="height:200px; width:200px"></a> <b>156.0$</b>
+<button type="button" class="btn btn-info btn-lg whew" data-toggle="modal" data-target="#myModal2">Details</button></div>
+
+  <!-- container end-->
+</div>
+
+<br> <br>
+
+
+<div class="container animated15 lightSpeedIn">
+  
+<!----4th pic--->
+
+    <div  class="col-sm-4 img" style=" background-color:rgba(255,255,255,0.2); color:white; border:1px solid rgba(255,255,255,0.6); text-align:center;"> 
+
+<a target="_top" href="../images/c4.jpg"><img src="../images/c4.jpg" class="img-responsive" style="height:200px; width:200px"></a><b> 200.5$</b>
+<button type="button" class="btn btn-info btn-lg whew" data-toggle="modal" data-target="#myModal3">Details</button></div>
+
+<!----5th pic--->
+
+   <div  class="col-sm-4 img" style=" background-color:rgba(255,255,255,0.2); color:white; border:1px solid rgba(255,255,255,0.6); text-align:center;"> 
+
+<a target="_self" href="../images/c5.jpg"><img src="../images/c5.jpg" class="img-responsive" style="height:200px; width:200px"></a> <b>80.0$</b>
+<button type="button" class="btn btn-info btn-lg whew" data-toggle="modal" data-target="#myModal4">Details</button></div>
+
+<!----6th pic--->
+
+   <div  class="col-sm-4 img" style=" background-color:rgba(255,255,255,0.2); color:white; border:1px solid rgba(255,255,255,0.6); text-align:center;"> 
+
+<a target="_self" href="../images/c6.JPG"><img src="../images/c6.JPG" class="img-responsive" style="height:200px; width:200px"></a> <b>99.0$</b>
+<button type="button" class="btn btn-info btn-lg whew" data-toggle="modal" data-target="#myModal5">Details</button></div>
+
+
+
+  <!-- container end-->
+
+</div>
+
+
+<br> <br>
+
+
+<div class="container animated2 lightSpeedIn">
+  
+<!----7th pic--->
+
+    <div  class="col-sm-4 img" style=" background-color:rgba(255,255,255,0.2); color:white; border:1px solid rgba(255,255,255,0.6); text-align:center;"> 
+
+<a target="_top" href="../images/c7.jpg"><img src="../images/c7.jpg" class="img-responsive" style="height:200px; width:200px"></a> <b>111.5$</b>
+<button type="button" class="btn btn-info btn-lg whew" data-toggle="modal" data-target="#myModal6">Details</button></div>
+
+<!----8th pic--->
+
+   <div  class="col-sm-4 img" style=" background-color:rgba(255,255,255,0.2); color:white; border:1px solid rgba(255,255,255,0.6); text-align:center;"> 
+
+<a target="_self" href="../images/c8.jpg"><img src="../images/c8.jpg" class="img-responsive" style="height:200px; width:200px"></a> <b>160.0$</B>
+<button type="button" class="btn btn-info btn-lg whew" data-toggle="modal" data-target="#myModal7">Details</button></div>
+
+<!----9th pic--->
+
+   <div  class="col-sm-4 img" style=" background-color:rgba(255,255,255,0.2); color:white; border:1px solid rgba(255,255,255,0.6); text-align:center;"> 
+
+<a target="_self" href="../images/c99.JPG"><img src="../images/c99.JPG" class="img-responsive" style="height:200px; width:200px"></a> <B>61.0$</b>
+<button type="button" class="btn btn-info btn-lg whew" data-toggle="modal" data-target="#myModal8">Details</button></div>
+
+
+
+  <!-- container end-->
+
+</div>
+
+
+<br> <br>
+
+
+<div class="container animated25 lightSpeedIn">
+  
+<!----10th pic--->
+
+    <div  class="col-sm-4 img" style=" background-color:rgba(255,255,255,0.2); color:white; border:1px solid rgba(255,255,255,0.6); text-align:center;"> 
+
+<a target="_top" href="../images/c10.jpg"><img src="../images/c10.jpg" class="img-responsive" style="height:200px; width:200px"></a> <b>111.5$</b>
+<button type="button" class="btn btn-info btn-lg whew" data-toggle="modal" data-target="#myModal9">Details</button></div>
+
+<!----11th pic--->
+
+   <div  class="col-sm-4 img" style=" background-color:rgba(255,255,255,0.2); color:white; border:1px solid rgba(255,255,255,0.6); text-align:center;"> 
+
+<a target="_self" href="../images/c12.jpg"><img src="../images/c112.jpg" class="img-responsive" style="height:200px; width:200px"></a> <b>169.0$</B>
+<button type="button" class="btn btn-info btn-lg whew" data-toggle="modal" data-target="#myModal10">Details</button></div>
+
+<!----12th pic--->
+
+   <div  class="col-sm-4 img" style=" background-color:rgba(255,255,255,0.2); color:white; border:1px solid rgba(255,255,255,0.6); text-align:center;"> 
+
+<a target="_self" href="../images/f11.JPG"><img src="../images/f1.JPG" class="img-responsive" style="height:200px; width:200px"></a> <B>61.0$</b>
+<button type="button" class="btn btn-info btn-lg whew" data-toggle="modal" data-target="#myModal11">Details</button></div>
+
+</div>
+<!--Container Closed-->
+
+<!--Modals-->
+
+
+
+  <!--12  Modal -->
+  <div class="modal animated lightSpeedIn" id="myModal11" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content" style="height:560px; background-image:url(../images/abstrac.jpg); color:white;">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span class="glyphicon glyphicon-off"></span> </button>
+          <h4 class="modal-title">Details</h4>
+        </div>
+        <div class="modal-body">
+          <p><h1 class="animated lightSpeedIn" style="text-align:center; font-size:40px; color:white;"><b>
+Verbatim 10Pcs - 2HD Floppy Disks - Black
+ </b></h1>
+<div class="img"><img src="../Images/f1.JPG" style="width:200px; height:200px;"/></div>
+<br> <div class="zinger">A floppy disk is a magnetic storage medium for computer systems. The floppy disk is composed of a thin, flexible magnetic disk sealed in a square plastic carrier. In order to read and write data from a floppy disk, a computer system must have a floppy disk drive (FDD).</div>
+</p>
+        
+      </div>
+      
+    </div>
+  </div>
+
+  </div>
+
+
+  <!--11th Modal -->
+  <div class="modal animated lightSpeedIn" id="myModal10" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content" style="height:560px; background-image:url(../images/abstrac.jpg); color:white;">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span class="glyphicon glyphicon-off"></span> </button>
+          <h4 class="modal-title">Details</h4>
+        </div>
+        <div class="modal-body">
+          <p><h3>LiteOn Ultra Slim ES1 External DVD / CD Writer 2.0 /3.0 - Black </h3>
+<div class="img"><img src="../images/c112.jpg" style="width:200px; height:200px;"/></div>
+<br> <div class="zinger">Ultra Slender and light
+USB Powered - No adapter needed
+Plug & Play Simplicity
+SMART Burn for the best burning disc
+Smart-x Optimized read spead
+Link2TV - Extensive TV compatibility</div>
+</p>
+        
+      </div>
+      
+    </div>
+  </div>
+
+  </div>
+
+  <!--10 Modal -->
+  <div class="modal animated lightSpeedIn" id="myModal9" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content" style="height:560px; background-image:url(../images/abstrac.jpg); color:white;">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span class="glyphicon glyphicon-off"></span> </button>
+          <h4 class="modal-title">Details</h4>
+        </div>
+        <div class="modal-body">
+          <p><h3>
+Samsung Super USB DVD Writer</h3>
+<div class="img"><img src="../images/c10.jpg" style="width:200px; height:200px;"/></div>
+<br> <div class="zinger">The Samsung USB DVD Writer is a lightweight and skinny portable drive capable of reading both CDs and DVDs. Samsung is ideal for those who regularly travel or commute. Connected only by USB, the device connects easily and quickly, allowing you to get set up and at work in no time. With 8x write speed you will be able to create DVDs and CDs and backup your files quickly. As the Samsung is TV linkable you can plug the drive directly into a free USB port on your television to enjoy your pictures, movies and music in a larger and grander format. The Samsung External USB DVD Writer is ideal for both homes and businesses, and is small and portable enough to be used both at home and on the move</div>
+</p>
+        
+        
+      </div>
+      
+    </div>
+  </div>
+
+  </div>
+
+  <!-- 9th Modal -->
+  <div class="modal animated lightSpeedIn" id="myModal8" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content" style="height:560px; background-image:url(../images/abstrac.jpg); color:white;">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span class="glyphicon glyphicon-off"></span> </button>
+          <h4 class="modal-title">Details</h4>
+        </div>
+        <div class="modal-body">
+          <p><h3>Aos Seller Internal DvD Room For Laptop And Mini Cpu </h3>
+<div class="img"><img src="../images/c99.JPG" style="width:200px; height:200px;"/></div>
+<br> <div class="zinger">Internal DvD Room
+Super Drive
+Read And Write Able Dvd And Cd
+For Laptop And Mini Cpu
+Fast Read And Write
+High Qulity
+Branded
+Stenderd Size</div>
+</p>
+        
+      </div>
+      
+    </div>
+  </div>
+
+  </div>
+
+  <!--8th Modal -->
+  <div class="modal animated lightSpeedIn" id="myModal7" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content" style="height:560px; background-image:url(../images/abstrac.jpg); color:white;">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span class="glyphicon glyphicon-off"></span> </button>
+          <h4 class="modal-title">Details</h4>
+        </div>
+        <div class="modal-body">
+          <p><h3>Samsung USB SUPER DRIVE 3.0 </h3>
+<div class="img"><img src="../images/c8.jpg" style="width:200px; height:200px;"/></div>
+<br> <div class="zinger">>EASY TO USE - Plug And Play, No External Drive Needed. This CD DVD - RW Burner Allows You To Watch DVD/CD Movies With No Lag And Burn Music, Movies To CD Or DVD>
+ UNIVERSAL COMPATIBILITY - WindowsXP / 2003 / Wind8 / Vita / 7 , Linux, Mac 10 OS System>
+ HIGH SPEED - It Is Compatible With USB3.0 And Backwards Compatible With USB1.0 And USB2.0 Efficiency More Stable, Applies More Widely.>
+[USB 3.0 FAST & SAFE]: USB 3.0 Portable External DVD/CD RW Drive/Burner, With Convenience Eject Button Designed.
+ WELL DESIGN - It Is Portable For Traveling With Your Laptop Thanks To Its Small Size. It Will Be Especially Handy For Your Work If You Want To Give Presentations To The Business. Just Burn The DVD To Suffice Everything And Do Not Need To Carry Laptops Everywhere.></div>
+</p>
+        
+      </div>
+      
+    </div>
+  </div>
+
+  </div>
+
+  <!--7th Modal -->
+  <div class="modal animated lightSpeedIn" id="myModal6" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content" style="height:560px; background-image:url(../images/abstrac.jpg); color:white;">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span class="glyphicon glyphicon-off"></span> </button>
+          <h4 class="modal-title">Details</h4>
+        </div>
+        <div class="modal-body">
+          <p><h3>Aos Seller Internal Dvd_Cd Room And Read Writer Drive For Cpu/Pc</h3>
+<div class="img"><img src="../images/c7.jpg" style="width:200px; height:200px;"/></div>
+<br> <div class="zinger">Internal Dvd_Cd Room
+And Read Writer Drive
+For Cpu/Pc
+Branded
+Sata Drive
+Fast Read And Write
+For Desktop And Tower Cpu/Pc
+High Quality</div>
+</p>
+        
+        
+      </div>
+      
+    </div>
+  </div>
+
+  </div>
+  <!-- 6th Modal -->
+  <div class="modal animated lightSpeedIn" id="myModal5" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content" style="height:560px; background-image:url(../images/abstrac.jpg); color:white;">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span class="glyphicon glyphicon-off"></span> </button>
+          <h4 class="modal-title">Details</h4>
+        </div>
+        <div class="modal-body">
+          <p><h3>Verbatim Dvd-R 4.7Gb 16X Ink Jet Printable 50Pc Spindle Made In Japan</h3>
+<div class="img"><img src="../images/c6.JPG" style="width:200px; height:200px;"/></div>
+<br> <div class="zinger">Verbatim DVD-R 4.7GB 16X Ink Jet Printable 50Pc Spindle Made in JapanDVD-R is a recordable disc providing 4.7GB capacity, Compliant with the DVD-Forum specifications highest Level of Recording Stability White Surface for inkjet Printing up to pr</div>
+</p>
+        
+      </div>
+      
+    </div>
+  </div>
+
+  </div>
+
+
+  <!--5th  Modal -->
+  <div class="modal animated lightSpeedIn" id="myModal4" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content" style="height:560px; background-image:url(../images/abstrac.jpg); color:white;">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span class="glyphicon glyphicon-off"></span> </button>
+          <h4 class="modal-title">Details</h4>
+        </div>
+        <div class="modal-body">
+          <p><h3>LG External Slim Portable DVD /CD Writer with TV Connectivity via USB (GP50)</h3>
+<div class="img"><img src="../images/c5.jpg" style="width:200px; height:200px;"/></div>
+<br> <div class="zinger">M-Disc
+
+TV Connectivity
+
+Silent Play
+
+ 
+
+Specification:
+
+ 
+
+Interface Type: USB 2.0 (Y type)
+
+Operating System Compatibility: Windows 8/7/Vista (32bit, 64bit), XP (SP3), Mac OS X v.10.5.4 or Higher Drive
+
+Mac Compatible: Yes
+
+ 
+
+Reading Speed:
+
+DVD-ROM (SL/DL): 8x
+
+DVD-R (SL/DL) : 8x/8x max.
+
+DVD-RW (SL/DL) : 8x/8x max.
+
+DVD R (SL/DL) : 8x/8x max.
+
+DVD RW (SL/DL) : 8x/8x max.
+
+DVD-Video (CSS Compliant Disc) (SL/DL) : 4x ...</div>
+</p>
+        
+      </div>
+      
+    </div>
+  </div>
+
+  </div>
+
+  <!-- 4th Modal -->
+  <div class="modal animated lightSpeedIn" id="myModal3" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content" style="height:560px; background-image:url(../images/abstrac.jpg); color:white;">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span class="glyphicon glyphicon-off"></span> </button>
+          <h4 class="modal-title">Details</h4>
+        </div>
+        <div class="modal-body">
+          <p><h3>LG BLACK SATA 24x DVDRW SUPER MULTI INTERNAL OPTICAL CD DVD DESKTOP OEM PC DRIVE (SSD)</h3>
+<div class="img"><img src="../images/c4.jpg" style="width:200px; height:200px;"/></div>
+<br> <div class="zinger"> LG
+CD/DVD Combo Drive
+Internal Desktop DVD Drive -READER & WRITER</div>
+</p>
+        
+        
+      </div>
+      
+    </div>
+  </div>
+
+  </div>
+
+  <!-- 3rd pic Modal -->
+  <div class="modal animated lightSpeedIn" id="myModal2" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content" style="height:560px; background-image:url(../images/abstrac.jpg); color:white;">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span class="glyphicon glyphicon-off"></span> </button>
+          <h4 class="modal-title">Details</h4>
+        </div>
+        <div class="modal-body">
+          <p><h3>Transcend TS8XDVDS-K Extra Slim Portable DVD Writer Driver </h3>
+<div class="img"><img src="../images/c2.JPG" style="width:200px; height:200px;"/></div>
+<br> <div class="zinger"> Brand: Transcend     
+Hardware Type: DVD Writer
+Model: Extra Slim Portable DVD Writer</div>
+</p>
+        
+      </div>
+      
+    </div>
+  </div>
+
+  </div>
+
+  <!-- 2nd pic Modal -->
+  <div class="modal animated lightSpeedIn" id="myModal1" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content" style="height:560px; background-image:url(../images/abstrac.jpg); color:white;">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span class="glyphicon glyphicon-off"></span> </button>
+          <h4 class="modal-title">Details</h4>
+        </div>
+        <div class="modal-body">
+          <p><h3>Internal DVD/RW Asus 24D5MT, SATA, Black </h3>
+<div class="img"><img src="../images/c3.jpg" style="width:200px; height:200px;"/></div>
+<br> <div class="zinger"> Asus Internal DVD/RW Dual Layer Drive
+M-Disc Support, E-Green Drive
+24X DVD write speed, black colour design
+Features reducing vibration and noise induced by unbalanced mass of rotating
+machinery
+Provides enhanced readability and playability</div>
+</p>
+        
+      </div>
+      
+    </div>
+  </div>
+
+  </div>
+
+  <!-- 1 Pic Modal -->
+  <div class="modal animated lightSpeedIn" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content" style="height:560px; background-image:url(../images/abstrac.jpg); color:white;">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span class="glyphicon glyphicon-off"></span> </button>
+          <h4 class="modal-title">Details</h4>
+        </div>
+        <div class="modal-body">
+          <p><h3>Asus External DVD Writer</h3>
+<div class="img"><img src="../images/c11.jpg" style="width:200px; height:200px;"/></div>
+<br> <div class="zinger"> Harmony of Technology and Aethetics Mac and Windows OS Compatible Disc Encryption double security with password-controlled and hidden-file functionality Drag-and-Burn: friendly interface with only three simple steps to burn a disc Diamond-cut design realize aesthetics of technology</div>
+</p>
+        
+        
+      </div>
+      
+    </div>
+  </div>
+
+  </div>
+
+
+<!--Modals-->
+
+<!--Footer Open-->
+ <footer style=" background-image:url('../images/abstract.jpg'); background-size:cover; width:100%; height:240px;" class="animated slideInUp">
+
+<h1 style=" text-align:center; font-size:30px;">Ocean Gate Limited</h1><br>
+
+<form style="text-align:center;">
+<input type="text" id="emailaddress" size="50" required name="emailaddress" required placeholder=" Write your message here..." style=" border-radius:10px; height:50px; background-color:rgba(0,0,0,0.6); border-bottom:2px solid white; color:white;">
+<input type="submit" value="Send" style="height:50px; width:100px; border-radius:10px; border-bottom:2px solid white; color:red;background-color:rgba(0,0,0,0.6);"></a>
+</form>
+
+<div style=" font-family:comic sans MS, cursive, sans-serif; position:relative; margin-left:20px; margin-right:20px; margin-top:50px;">
+  <div style="float:left;">
+   <b style="font-size:18px;">All rights reserved, "Ocean Gate Limited."</b><br>
+   <b style="font-size:18px;">Copyright <i class="fa fa-copyright"></i> 2018</b>
+  </div>
+
+<div style="float:left; margin-left:200px;">
+<a href="Terms.html" target="_blank" style="font-size:25px;">Terms and Conditions!</a>
+</div>
+
+  <div style="float:right;">
+   <b style="font-size:18px;">Connect with us on</b><br>
+   <a href="mailto:aaltamashking@gmail.com" target:"_blank" class="goo" style="margin-left:10px;"><i class="fa fa-envelope-o"></i></a>
+   <a href="https://www.facebook.com/" target="_blank" class="face" style="margin-left:10px;"><i class="fa fa-facebook"></i></a>
+   <a href="https://www.instagram.com/" target="_blank" class="insta" style="margin-left:10px;"><i class="fa fa-instagram"></i></a>
+   <a href="https://www.pinterest.com/" target="_blank" class="pin" style="margin-left:10px;"><i class="fa fa-pinterest-p"></i></a>
+   <a href="https://www.youtube.com/" target="_blank" class="you" style="margin-left:10px;"><i class="fa fa-youtube"></i></a>
+  </div>
+</div>
+
+
+ </footer>
+<!--Footer Closed-->
+
+
+</body>
+<!--Body Closed-->
+
+</html>
+

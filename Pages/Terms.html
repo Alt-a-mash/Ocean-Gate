@@ -1,0 +1,312 @@
+<!Doctype html>
+<html lang="en">
+
+<!--Head Open-->
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+ <link rel="icon" href="../images/Logo.jpg" type="image" sizes="5x5">
+
+
+<!--Style Tag Open-->
+ <style>
+footer:hover{ opacity:0.9;}
+
+  video#bg2 {
+
+		position:fixed;
+ 		left: 0;
+		bottom: 0px;
+
+		min-width: 100%;
+		min-height: 100%px;
+
+		width: auto;
+		height: auto;
+ 		z-index: -100;
+
+		background: url(Black.png) no-repeat;
+
+		background-size: cover;
+
+		}
+
+  a:link{ color:rgba(255,255,255,1);}
+  a:visited{ color:white;}
+  .goo:hover{ color:orangered;}
+  .face:hover{ color:darkblue;}
+  .insta:hover{ color:purple;}
+  .pin:hover{ color:maroon;}
+  .you:hover{ color:red;}
+  .ani{ color:white;}
+  .ani:hover{ background-color:white; color:black;}
+  h1:hover{background-color:rgba(0,0,0,0.6); border-bottom:1px solid red;}
+  b:hover{background-color:rgba(0,0,0,0.6); border-bottom:1px solid red;}
+  footer{ color:white; font-size:16px; bottom:0px; positon:fixed;}
+  input{border:none;}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes lightSpeedIn {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
+    transform: translate3d(100%, 0, 0) skewX(-30deg);
+    opacity: 0;
+  }
+
+  60% {
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: skewX(-5deg);
+    transform: skewX(-5deg);
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes lightSpeedIn {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
+    transform: translate3d(100%, 0, 0) skewX(-30deg);
+    opacity: 0;
+  }
+
+  60% {
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: skewX(-5deg);
+    transform: skewX(-5deg);
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.lightSpeedIn {
+  -webkit-animation-name: lightSpeedIn;
+  animation-name: lightSpeedIn;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+}
+
+@-webkit-keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInUp {
+  -webkit-animation-name: slideInUp;
+  animation-name: slideInUp;
+}
+
+
+<!--Dropdown Hover Button-->
+
+.btn {
+    background-color:rgba(0,0,0,0);
+    color: white;
+    padding:20px;
+    font-size: 30px;
+}
+
+.down {
+    position: relative;
+    display: inline-block;
+}
+
+.down-content {margin-left:230px; display: none; position: absolute; background-color: black; min-width: 160px; box-shadow: 0px 8px 16px 0px rgba(255,0,0,0.2); z-index: 1;}
+
+.down-content a { box-shadow: 0px 8px 16px 0px rgba(255,0,0,0.2); color: white; text-decoration: none; display: block; padding:10px;}
+
+.down-content a:hover {background-color: white; color:black;}
+
+.down:hover .down-content {display: block;}
+
+.down:hover .btn { color:rgba(255,255,255,1);}
+
+
+ </style>
+<!--Style Tag Closed-->
+
+</head>
+<!--Head Closed-->
+
+<!--Body Opening-->
+<body style="font-family:century gothic; background-color:black">
+
+ <title>Terms and Conditions | Ocean Gate Limited(OC)</title>
+
+<!--Background Video-->
+<video autoplay loop muted poster="Black.png" id="bg2">
+<source src="../videos/Black.mp4">
+</video>
+
+<!--Container Open-->
+  <div class="container-fluid">
+
+<!--Logo-->
+ <a href="OGL.html"><img src="../images/Logo1.png" class="infront animated lightSpeediIn" alt="No image found" title="Ocean Gate Limited" style=" position:fixed; height:100px; width:100px; right:0px;"></a><br>
+
+<!--Menu Nav Bar Modal-->
+   <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#menu" style=" z-index:1; position:fixed; border:2px solid rgba(0,0,0,0); background-color:rgba(0,0,0,0); color:white; font-size:60px;"><i class="fa fa-empire fa-spin"></i></button>
+   <!-- Modal -->
+  <div class="modal animated lightSpeedIn" id="menu" role="dialog">
+   <div class="modal-dialog modal-lg" style="width:75%;">
+    <!-- Modal content-->
+    <div class="modal-content" style=" height:550px; background-image:url(../images/abstrac.jpg); color:white; border:1px solid rgba(255,255,255,0.6);">
+     <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" style="color:white; font-size:30px;"><span class="glyphicon glyphicon-off"></span></button>
+      <h4 class="modal-title" style="font-size:60px;"><b><a href="../Index.html" class="ani"><i class="fa fa-university"></i>Menu</a></b></h4>
+     </div>
+     <div class="modal-body">
+      <div class="navbar-header">
+       <ul class="nav navbar-nav" style=" font-size:20px;"><b>
+        <li><a href="OGL.html" class="ani" style="font-size:30px; margin-left:13px;"><span class="glyphicon glyphicon-king"></span>Ocean Gate</a></li><br>
+        <li><div class="down"> <button class="btn" style="font-size:30px; background-color:rgba(0,0,0,0);"><b> <span class="glyphicon glyphicon-queen"></span>Storage Devices </b></button>
+	<div class="down-content">
+	<a href="cd.html">CD ROMs</a>
+	<a href="hdd.html">Hard Disk Drives</a>
+	<a href="usb.html">USBs</a>
+	<a href="ssd.html">Solid State Drives</a>
+	<a href="sd.html">SD Cards</a>
+	</div> </div> </li><br>
+<li><a href="compare.html" class="ani" style="font-size:30px; margin-left:13px;"><span class="glyphicon glyphicon-pawn"></span>Comparison</a></li><br>
+<li><a href="Repair.html" class="ani" style="font-size:30px; margin-left:13px;"><span class="glyphicon glyphicon-pawn"></span>Easy Repair</a></li><br>
+        <li><a href="Contact.html" class="ani" style="font-size:30px; margin-left:13px;"><span class="glyphicon glyphicon-knight"></span>Contact Us</a></li><br>
+        <li><a href="Feedback.html" class="ani" style="font-size:30px; margin-left:13px;"><span class="glyphicon glyphicon-bishop"></span>Feedback</a></li><br>
+        
+       </b></ul>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+<!--Title-->
+<h1 class="animated lightSpeedIn" style="text-align:center; font-size:100px; color:white; margin-top:200px"><b> Ocean Gate Limited </b></h1>
+<h1 class="animated lightSpeedIn" style="text-align:center; font-size:60px; color:white;"> Gate To The Ocean Of Storage </h1>
+
+<!--Container Open-->
+<div class="container animated lightSpeedIn">
+
+<h1 style="color:white; text-align:center; font-size:80px; margin-top:300px;"> Terms And Conditions </h1><br><br>
+
+<!--Container Open-->
+<div style="background-color:rgba(0,0,0,0.4); text-align:center; color:white; border:1px solid white;">
+<br><br>
+  <p style="font-size:30px; text-align:left;">
+   Welcome to www.OGL.com or www.oceangatelimited.com (this "Site"). This Site is owned and operated by Ocean Gate Limited (collectively "OGL," "we," "our," or "us") to provide information about, among other things, our corporate affairs, products, services, partners and also contact details. The terms "you," "your," and "yours" refer to anyone accessing, viewing, browsing, visiting or using this Site. <br><br>
+   <b style="text-decoration:underline;">IMPORTANT - PLEASE READ CAREFULLY -</b> THESE TERMS OF USE (THESE "TERMS") CONSTITUTE A LEGALLY BINDING CONTRACT WHICH GOVERN YOUR USE OF THIS SITE. BY ACCESSING, VIEWING, BROWSING, VISITING OR USING THIS SITE YOU ACCEPT AND AGREE TO BE BOUND, WITHOUT LIMITATION OR QUALIFICATION, BY THESE TERMS. IF YOU DO NOT ACCEPT ANY OF THESE TERMS, PLEASE DO NOT USE THIS SITE. OGL MAY, IN ITS SOLE DISCRETION, MODIFY OR REVISE THESE TERMS AT ANY TIME BY UPDATING THIS POSTING. YOU ARE BOUND BY ANY SUCH MODIFICATION OR REVISION AND SHOULD THEREFORE VISIT THIS PAGE PERIODICALLY TO REVIEW THESE TERMS. IF ANY MODIFICATION IS NOT ACCEPTABLE TO YOU, YOUR SOLE REMEDY AND RECOURSE IS TO DISCONTINUE USE OF THIS SITE. <br><br>
+   <b style="text-decoration:underline;">Other Terms and Conditions</b><br>
+   Some products and services accessible through this Site are subject to other or additional terms and conditions (for example, OGL's online store and the OGL Community). To the extent that any provision of those additional terms and conditions conflicts with these Terms, those additional terms and conditions shall prevail. <br><br>
+   <b style="text-decoration:underline;">Authorized Use</b><br>
+   Subject to these Terms, we authorize you to view and download the information and other materials at or through this Site only for your personal, non-commercial use, provided that you retain all copyright and other proprietary notices contained in the original materials on any copies of the materials. You may not, without the prior written permission of OGL, "mirror" any material contained on this Site on any other server. Additional terms and conditions may apply to your use of any products and services offered through this Site. Please review all such terms and conditions before you use any of our products and services. <br><br>
+   <b style="text-decoration:underline;">Ownership</b><br>
+   You acknowledge and agree that this Site uses and contains proprietary and confidential technology and information owned by or licensed to us, and protected by applicable intellectual property and other laws and international treaties. The content displayed on or through this Site, including without limitation all information, data, text, software, photographs, graphics, video, or other materials (the "Content") is copyrighted by us or our licensors under United States and international copyright laws. The Content may not be copied, modified, reproduced, republished, posted, transmitted, sold, offered for sale, or redistributed in any way without our prior written permission. You must abide by all copyright notices, information, or restrictions contained in or attached to any Content.<br>
+   "Ocean Gate Limited," "OGL," the "OGL logo" and certain other words and logos displayed on this Site and which may or may not be designated on this Site by a "<small><small><small><small>TM</small></small></small></small>" "<small><small><small><small>&reg;</small></small></small></small>" "SM" or other similar designation, constitute trademarks, trade names, or service marks (collectively, "Marks") of OGL or other entities. You are not authorized to use any such Marks. Ownership of all such Marks and the goodwill associated therewith remains with us or our respective licensors. Please click here for additional information regarding OGL trademarks.<br>
+   Nothing contained on this Site should be construed as granting, by implication, estoppel, or otherwise, any license or right to use this Site or any information displayed on this Site, through the use of framing, deep linking or otherwise, except: <br>(a) as expressly permitted by these Terms; or (b) with prior written permission from us or the third party that may own the trademark or copyright of information displayed on this Site. <br><br>
+   <b style="text-decoration:underline;">Disclaimers</b><br>
+   YOU EXPRESSLY AGREE THAT YOUR USE OF THIS SITE, THE CONTENT AND ANY SERVICES OFFERED THROUGH THIS SITE SHALL BE AT YOUR SOLE DISCRETION AND RISK. THIS SITE, THE CONTENT AND THE SERVICES OFFERED THROUGH THIS SITE ARE PROVIDED ON AN "AS IS" AND "AS-AVAILABLE" BASIS WITHOUT ANY WARRANTIES OF ANY KIND. TO THE FULLEST EXTENT PERMITTED BY LAW, OGL DISCLAIMS ALL WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE WARRANTY OF MERCHANTABILITY, NON-INFRINGEMENT OF PROPRIETARY OR THIRD PARTY RIGHTS, AND THE WARRANTY OF FITNESS FOR PARTICULAR PURPOSE. OGL MAKES NO WARRANTIES ABOUT THE ACCURACY, RELIABILITY, COMPLETENESS, OR TIMELINESS OF THIS SITE, THE CONTENT, THE SERVICES OFFERED THROUGH THIS SITE OR ABOUT THE RESULTS TO BE OBTAINED FROM USING THIS SITE, THE CONTENT OR SERVICES OFFERED THROUGH THIS SITE. OGL DOES NOT WARRANT THAT THIS SITE WILL OPERATE ERROR-FREE OR THAT THIS SITE OR ITS SERVER ARE FREE OF COMPUTER VIRUSES OR OTHER HARMFUL GOODS. IF YOUR USE OF THIS SITE OR THE CONTENT OR THE RESULTS OBTAINED FROM USING THIS SITE RESULTS IN THE NEED FOR SERVICING OR REPLACING EQUIPMENT OR LOSS OF PROFITS OR DATA, OGL IS NOT RESPONSIBLE FOR THOSE COSTS. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF CERTAIN WARRANTIES, SO SOME OF THE ABOVE EXCLUSIONS MAY NOT APPLY TO YOU. <br><br>
+   <b style="text-decoration:underline;">Limitation of Liability</b><br>
+   IN NO EVENT SHALL OGL OR ITS AFFILIATES, SHAREHOLDERS, DIRECTORS, OFFICERS, EMPLOYEES, AGENTS OR LICENSORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES THAT RESULT FROM THE USE OF OR INABILITY TO USE THIS SITE, THE CONTENT OR SERVICES OFFERED THROUGH THIS SITE INCLUDING, BUT NOT LIMITED TO, RELIANCE BY A USER ON ANY INFORMATION OBTAINED AT THIS SITE, OR THAT RESULTS FROM MISTAKES, OMISSIONS, INTERRUPTIONS, DELETION OF FILES OR E-MAIL, ERRORS, DEFECTS, VIRUSES, DELAYS IN OPERATION OR TRANSMISSION, OR ANY FAILURE OF PERFORMANCE, WHETHER OR NOT RESULTING FROM ACTS OF GOD, COMMUNICATIONS FAILURE, THEFT, DESTRUCTION OR UNAUTHORIZED ACCESS TO OUR RECORDS, PROGRAMS OR SERVICES. THE FOREGOING LIMITATION OF LIABILITY SHALL APPLY WHETHER IN AN ACTION AT LAW, INCLUDING BUT NOT LIMITED TO CONTRACT, NEGLIGENCE, OR OTHER TORTUOUS ACTION; OR AN ACTION IN EQUITY, EVEN IF WE HAVE BEEN ADVISED OF OR SHOULD HAVE KNOWLEDGE OF THE POSSIBILITY OF SUCH DAMAGES. YOU HEREBY ACKNOWLEDGE THAT THIS PARAGRAPH SHALL APPLY TO ALL CONTENT AVAILABLE THROUGH THIS SITE. SOME JURISDICTIONS DO NOT ALLOW THE LIMITATION OF LIABILITY FOR INCIDENTAL OR CONSEQUENTIAL DAMAGES SO SOME OF THE ABOVE LIMITATIONS MAY NOT APPLY TO YOU. <br><br>
+  </p>
+
+</div>
+<!--Container Closed-->
+
+</div>
+<!--Container Closed-->
+
+
+<!--Footer Open-->
+ <footer style=" background-image:url('../images/abstract.jpg'); background-size:cover; width:100%; height:240px;" class="animated slideInUp">
+
+<h1 style=" text-align:center; font-size:30px;">Ocean Gate Limited</h1><br>
+
+<form style="text-align:center;">
+<input type="text" id="emailaddress" size="50" required name="emailaddress" required placeholder=" Write your message here..." style=" border-radius:10px; height:50px; background-color:rgba(0,0,0,0.6); border-bottom:2px solid white; color:white;">
+<input type="submit" value="Send" style="height:50px; width:100px; border-radius:10px; border-bottom:2px solid white; color:red;background-color:rgba(0,0,0,0.6);"></a>
+</form>
+
+<div style=" font-family:comic sans MS, cursive, sans-serif; position:relative; margin-left:20px; margin-right:20px; margin-top:50px;">
+  <div style="float:left;">
+   <b style="font-size:18px;">All rights reserved, "Ocean Gate Limited."</b><br>
+   <b style="font-size:18px;">Copyright <i class="fa fa-copyright"></i> 2018</b>
+  </div>
+
+<div style="float:left; margin-left:200px;">
+<a href="Terms.html" target="_blank" style="font-size:25px;">Terms and Conditions!</a>
+</div>
+
+  <div style="float:right;">
+   <b style="font-size:18px;">Connect with us on</b><br>
+   <a href="mailto:aaltamashking@gmail.com" target:"_blank" class="goo" style="margin-left:10px;"><i class="fa fa-envelope-o"></i></a>
+   <a href="https://www.facebook.com/" target="_blank" class="face" style="margin-left:10px;"><i class="fa fa-facebook"></i></a>
+   <a href="https://www.instagram.com/" target="_blank" class="insta" style="margin-left:10px;"><i class="fa fa-instagram"></i></a>
+   <a href="https://www.pinterest.com/" target="_blank" class="pin" style="margin-left:10px;"><i class="fa fa-pinterest-p"></i></a>
+   <a href="https://www.youtube.com/" target="_blank" class="you" style="margin-left:10px;"><i class="fa fa-youtube"></i></a>
+  </div>
+</div>
+
+
+ </footer>
+<!--Footer Closed-->
+
+
+
+</body>
+<!--Body Closed-->
+
+</html>

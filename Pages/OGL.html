@@ -1,0 +1,392 @@
+﻿<!Doctype html>
+<html lang="en">
+
+<!--Head Open-->
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+ <link rel="icon" href="../Images/Logo.jpg" type="image" sizes="5x5">
+
+<!--Style Tag Open-->
+ <style>
+footer:hover{ opacity:0.9;}
+
+   video#vid1 {
+
+		position:sticky;
+ 		left: 0;
+		bottom: 0px;
+
+		min-width: 100%;
+		min-height: 100%;
+
+		width: auto;
+		height: auto;
+ 		z-index: -100;
+
+		background: url(back0.png) no-repeat;
+
+		background-size: cover;
+
+		}
+
+  video#bg2 {
+
+		position:fixed;
+ 		left: 0;
+		bottom: 0px;
+
+		min-width: 100%;
+		min-height: 100%px;
+
+		width: auto;
+		height: auto;
+ 		z-index: -100;
+
+		background: url(Black.png) no-repeat;
+
+		background-size: cover;
+
+		}
+
+
+  a:link{ color:rgba(255,255,255,1);}
+  a:visited{ color:white;}
+  .goo:hover{ color:orangered;}
+  .face:hover{ color:darkblue;}
+  .insta:hover{ color:purple;}
+  .pin:hover{ color:maroon;}
+  .you:hover{ color:red;}
+  .ani{ color:white;}
+  .ani:hover{ background-color:white; color:black;}
+
+  h1:hover{background-color:rgba(0,0,0,0.6); border-bottom:1px solid red;}
+
+  footer{ color:white; font-size:16px; bottom:0px; positon:fixed;}
+  input{border:none;}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes lightSpeedIn {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
+    transform: translate3d(100%, 0, 0) skewX(-30deg);
+    opacity: 0;
+  }
+
+  60% {
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: skewX(-5deg);
+    transform: skewX(-5deg);
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes lightSpeedIn {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
+    transform: translate3d(100%, 0, 0) skewX(-30deg);
+    opacity: 0;
+  }
+
+  60% {
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: skewX(-5deg);
+    transform: skewX(-5deg);
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.lightSpeedIn {
+  -webkit-animation-name: lightSpeedIn;
+  animation-name: lightSpeedIn;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+}
+
+@-webkit-keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInUp {
+  -webkit-animation-name: slideInUp;
+  animation-name: slideInUp;
+}
+
+
+<!--Dropdown Hover Button-->
+
+.btn {
+    background-color:rgba(0,0,0,0);
+    color: white;
+    padding:20px;
+    font-size: 30px;
+}
+
+.down {
+    position: relative;
+    display: inline-block;
+}
+
+.down-content {margin-left:230px; display: none; position: absolute; background-color: black; min-width: 160px; box-shadow: 0px 8px 16px 0px rgba(255,0,0,0.2); z-index: 1;}
+
+.down-content a { box-shadow: 0px 8px 16px 0px rgba(255,0,0,0.2); color: white; text-decoration: none; display: block; padding:10px;}
+
+.down-content a:hover {background-color: white; color:black;}
+
+.down:hover .down-content {display: block;}
+
+.down:hover .btn { color:rgba(255,255,255,1);}
+
+
+ </style>
+<!--Style Tag Closed-->
+
+</head>
+<!--Head Closed-->
+
+<!--Body Opening-->
+<body style="font-family:century gothic; background-color:black">
+
+ <title>Gate to the Ocean's Storage | Ocean Gate Limited(OC)</title>
+
+<!--Background Video-->
+<video autoplay loop muted poster="Black.png" id="bg2">
+<source src="../videos/Black.mp4">
+</video>
+
+<!--Container Open-->
+  <div class="container-fluid">
+
+<!--Logo-->
+ <a href="OGL.html"><img src="../images/Logo1.png" class="infront animated lightSpeediIn" alt="No image found" title="Ocean Gate Limited" style=" position:fixed; height:100px; width:100px; right:0px;"></a><br>
+
+<!--Menu Nav Bar Modal-->
+   <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#menu" style="position:fixed; border:2px solid rgba(0,0,0,0); background-color:rgba(0,0,0,0); color:white; font-size:60px; z-index:1;"><i class="fa fa-empire fa-spin"></i></button>
+   <!-- Modal -->
+  <div class="modal animated lightSpeedIn" id="menu" role="dialog">
+   <div class="modal-dialog modal-lg" style="width:75%;">
+    <!-- Modal content-->
+    <div class="modal-content" style=" height:550px; background-image:url(../images/abstrac.jpg); color:white; border:1px solid rgba(255,255,255,0.6);">
+     <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" style="color:white; font-size:30px;"><span class="glyphicon glyphicon-off"></span></button>
+      <h4 class="modal-title" style="font-size:60px;"><b><a href="../Index.html" class="ani"><i class="fa fa-university"></i>Menu</a></b></h4>
+     </div>
+     <div class="modal-body">
+      <div class="navbar-header">
+       <ul class="nav navbar-nav" style=" font-size:20px;"><b>
+        <li><div class="down"> <button class="btn ani" style="font-size:30px; background-color:rgba(0,0,0,0);"><b> <span class="glyphicon glyphicon-queen"></span>Storage Devices </b></button>
+	<div class="down-content">
+	<a href="cd.html">CD ROMs</a>
+	<a href="hdd.html">Hard Disk Drives</a>
+	<a href="usb.html">USBs</a>
+	<a href="ssd.html">Solid State Drives</a>
+	<a href="sd.html">SD Cards</a>
+	</div> </div> </li><br>
+<li><a href="compare.html" class="ani" style="font-size:30px; margin-left:13px;"><span class="glyphicon glyphicon-pawn"></span>Comparison</a></li><br>
+<li><a href="Repair.html" class="ani" style="font-size:30px; margin-left:13px;"><span class="glyphicon glyphicon-pawn"></span>Easy Repair</a></li><br>
+        <li><a href="Contact.html" class="ani" style="font-size:30px; margin-left:13px;"><span class="glyphicon glyphicon-knight"></span>Contact Us</a></li><br>
+        <li><a href="Feedback.html" class="ani" style="font-size:30px; margin-left:13px;"><span class="glyphicon glyphicon-bishop"></span>Feedback</a></li><br>
+        
+       </b></ul>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+
+<!--Title-->
+<h1 class="animated lightSpeedIn" style="text-align:center; font-size:100px; color:white; margin-top:200px"><b> Ocean Gate Limited </b></h1>
+<h1 class="animated lightSpeedIn" style="text-align:center; font-size:60px; color:white;"> Gate To The Ocean Of Storage </h1>
+
+
+
+
+<!--Welcoming Video-->
+<video autoplay muted loop id="vid1" poster="../images/back0.png">
+  <source src="../Videos/back0.mp4" type="video/mp4">
+</video>
+
+<!--Container Open-->
+ <div class="container">
+
+<!--Frame Open-->
+  <div style=" height:720px; text-align:center; background-color:rgba(255,255,255,0.2); color:white; border:1px solid rgba(255,255,255,0.6);">
+
+  <h1 style="font-size:30px; text-align:center;"><b> About The Company: "Ocean Gate Limit" </b></h1>
+
+  <p style="font-size:20px; float:left;">
+We established 3 years ago, in 2015. Ocean Gate  Limited is a company with strong values and a passion to innovate and lead the charge in the products of data storage. It has state of the Art machinery for production of the best storage devices and disks, which are becoming popular as days pass by due to the excellent quality, fast delivery on purchases and efficient after sales Services. Quality products, exceptional customer service and industry-leading solutions all come from a culture that's inclusive, forward-thinking and bold enough to imagine the possibilities ofdata storage.
+
+<!--More About Detail Modal-->
+  <div class="container-fluid">
+   <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#about" style=" border:2px solid rgba(0,0,0,0); background-color:rgba(0,0,0,0); color:white; font-size:20px;">See more...</button>
+  </div>
+
+<br>
+
+  <embed src="../Videos/back1.mp4" autoplay loop muted style=" height:400px; width:750px;"></embed>
+
+</div>
+<!--Frame Closed-->
+
+</div>
+<!--Container Closed-->
+
+<br><br><br>
+
+<!--Container Open-->
+ <div class="container animated lightSpeedIn">
+<!--Frame Open-->
+<div style=" height:600px; text-align:center; background-color:rgba(255,255,255,0.2); color:white; border:1px solid rgba(255,255,255,0.6);">
+
+<h1 style="text-align:center;"> How Storage Devices are Manufactured </h1>
+Data storage is the recording (storing) of information (data) in a storage medium. Recording is accomplished by virtually any form of energy. DNA and RNA, handwriting, phonographic recording, magnetic tape, and optical discs are all examples of storage media. Electronic data storage requires electrical power to store and retrieve data. Data storage in a digital, machine-readable medium is sometimes called digital data. Computer data storage is one of the core functions of a general purpose computer. Electronic documents can be stored in much less space than paper documents. Barcodes and magnetic ink character recognition (MICR) are two ways of recording machine-readable data on paper.
+  <br><br>
+<video src="../Videos/back2.mp4" autoplay loop muted style=" height:400px; width:750px;"></video>
+</div>
+<!--Frame Closed-->
+
+</div> 
+<!--Container Closed-->
+
+<br><br><br>
+
+<!--Container Open-->
+ <div class="container animated lightSpeedIn">
+
+<!--Frame Open-->
+ <div style=" height:500px;  width:800px ;text-align:center; background-color:rgba(255,255,255,0.2); color:white; border:1px solid rgba(255,255,255,0.6); margin-left:160px;">
+<h1 style="text-align:center"> Our Partners </h1>
+ <img src="../images/logo2.jpg" style="height:80px; width:160px; margin:20px;" class="infront"> <img src="../images/logo3.png" style="height:80px; width:160px; margin:20px;" class="infront"> <img src="../images/logo4.png" style="height:80px; width:160px; margin:20px;" class="infront"><br>
+ <img src="../images/logo5.png" style="height:80px; width:160px; margin:20px;" class="infront"> <img src="../images/logo6.png" style="height:80px; width:160px; margin:20px;" class="infront"> <img src="../images/logo7.png" style="height:80px; width:160px; margin:20px;" class="infront"><br>
+ <img src="../images/logo8.png" style="height:80px; width:160px; margin:20px;" class="infront"> <img src="../images/logo9.jpg" style="height:80px; width:160px; margin:20px;" class="infront"> <img src="../images/logo10.jpg" style="height:80px; width:160px; margin:20px;" class="infront"><br>
+ </div>
+<!--Frame Closed-->
+
+</div>
+<!--Container Closed-->
+
+
+<!-- Modal -->
+<div class="modal animated lightSpeedIn" id="about" role="dialog">
+    <div class="modal-dialog modal-lg" style=" z-index:100p; width:75%;">
+     <!-- Modal content-->
+     <div class="modal-content"  style=" height:570px; background-image:url(../images/abstrac.jpg); color:white; border:1px solid rgba(255,255,255,0.6);">
+      <div class="modal-header">
+       <button type="button" class="close infront" data-dismiss="modal" style="color:white; font-size:30px;"><span class="glyphicon glyphicon-off"></span></button>
+       <h4 class="modal-title" style="font-size:40px;"><b class="ani"><b><u> About The Company: "Ocean Gate Limit" </u></b></h4>
+    </div>
+      <div class="modal-body">
+       <div class="navbar-header">
+      <p style=" font-size:20px;" class="ani">
+       We established 3 years ago, in 2015.Ocean Gate  Limited is a company with strong values and a passion to innovate and lead the charge in the products of data storage. It has state of the Art machinery for production of the best storage devices and disks, which are becoming popular as days pass by due to the excellent quality, fast delivery on purchases and efficient after sales Services. Quality products, exceptional customer service and industry-leading solutions all come from a culture that's inclusive, forward-thinking and bold enough to imagine the possibilities of data storage.<br><br>
+      We thrive on the power and potential of diversity. As a global company, we believe that the most effective way to embrace the diversity of our customers and communities is to mirror it from within. We believe that the fusion of various perspectives results in the best outcomes for our employees, our company, our customers, and the world around us. We are committed to an inclusive environment where every individual can thrive through a sense of belonging, respect and contribution. <br><br>
+      Oceangate products are becoming so popular that the demand for the products is not only coming from the local market but also from international market.
+      </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+<!--Modals-->
+
+<!--Footer Open-->
+ <footer style=" background-image:url('../images/abstract.jpg'); background-size:cover; width:100%; height:240px;" class="animated slideInUp">
+
+<h1 style=" text-align:center; font-size:30px;">Ocean Gate Limited</h1><br>
+
+<form style="text-align:center;">
+<input type="text" id="emailaddress" size="50" required name="emailaddress" required placeholder=" Write your message here..." style=" border-radius:10px; height:50px; background-color:rgba(0,0,0,0.6); border-bottom:2px solid white; color:white;">
+<input type="submit" value="Send" style="height:50px; width:100px; border-radius:10px; border-bottom:2px solid white; color:red;background-color:rgba(0,0,0,0.6);"></a>
+</form>
+
+<div style=" font-family:comic sans MS, cursive, sans-serif; position:relative; margin-left:20px; margin-right:20px; margin-top:50px;">
+  <div style="float:left;">
+   <b style="font-size:18px;">All rights reserved, "Ocean Gate Limited."</b><br>
+   <b style="font-size:18px;">Copyright <i class="fa fa-copyright"></i> 2018</b>
+  </div>
+
+<div style="float:left; margin-left:200px;">
+<a href="Terms.html" target="_blank" style="font-size:25px;">Terms and Conditions!</a>
+</div>
+
+  <div style="float:right;">
+   <b style="font-size:18px;">Connect with us on</b><br>
+   <a href="mailto:aaltamashking@gmail.com" target:"_blank" class="goo" style="margin-left:10px;"><i class="fa fa-envelope-o"></i></a>
+   <a href="https://www.facebook.com/" target="_blank" class="face" style="margin-left:10px;"><i class="fa fa-facebook"></i></a>
+   <a href="https://www.instagram.com/" target="_blank" class="insta" style="margin-left:10px;"><i class="fa fa-instagram"></i></a>
+   <a href="https://www.pinterest.com/" target="_blank" class="pin" style="margin-left:10px;"><i class="fa fa-pinterest-p"></i></a>
+   <a href="https://www.youtube.com/" target="_blank" class="you" style="margin-left:10px;"><i class="fa fa-youtube"></i></a>
+  </div>
+</div>
+
+
+ </footer>
+<!--Footer Closed-->
+
+
+
+</body>
+<!--Body Closed-->
+
+</html>

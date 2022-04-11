@@ -1,0 +1,334 @@
+<!Doctype html>
+<html lang="en">
+
+<!--Head Open-->
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+ <link rel="icon" href="../images/Logo.jpg" type="image" sizes="5x5">
+
+
+<!--Style Tag Open-->
+ <style>
+footer:hover{ opacity:0.9;}
+
+  video#bg2 {
+
+		position:fixed;
+ 		left: 0;
+		bottom: 0px;
+
+		min-width: 100%;
+		min-height: 100%px;
+
+		width: auto;
+		height: auto;
+ 		z-index: -100;
+
+		background: url(Black.png) no-repeat;
+
+		background-size: cover;
+
+		}
+
+  a:link{ color:rgba(255,255,255,1); text-decoration:none;}
+  a:visited{ color:white; text-decoration:none;}
+  a:hover{ text-decoration:none;}
+  .goo:hover{ color:orangered;}
+  .face:hover{ color:darkblue;}
+  .insta:hover{ color:purple;}
+  .pin:hover{ color:maroon;}
+  .you:hover{ color:red;}
+  .gg{ background-color:rgba(255,255,255,0.4);}
+  .gg:hover{ background-color:rgba(0,0,0,0.4);}
+  .ani{ color:white;}
+  .ani:hover{ background-color:white; color:black;}
+  h1:hover{background-color:rgba(0,0,0,0.6); border-bottom:1px solid red;}
+  footer{ color:white; font-size:16px; bottom:0px; positon:fixed;}
+  input{border:none;}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes lightSpeedIn {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
+    transform: translate3d(100%, 0, 0) skewX(-30deg);
+    opacity: 0;
+  }
+
+  60% {
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: skewX(-5deg);
+    transform: skewX(-5deg);
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes lightSpeedIn {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
+    transform: translate3d(100%, 0, 0) skewX(-30deg);
+    opacity: 0;
+  }
+
+  60% {
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: skewX(-5deg);
+    transform: skewX(-5deg);
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.lightSpeedIn {
+  -webkit-animation-name: lightSpeedIn;
+  animation-name: lightSpeedIn;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+}
+
+@-webkit-keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInUp {
+  -webkit-animation-name: slideInUp;
+  animation-name: slideInUp;
+}
+
+
+<!--Dropdown Hover Button-->
+
+.btn {
+    background-color:rgba(0,0,0,0);
+    color: white;
+    padding:20px;
+    font-size: 30px;
+}
+
+.down {
+    position: relative;
+    display: inline-block;
+}
+
+.down-content {margin-left:230px; display: none; position: absolute; background-color: black; min-width: 160px; box-shadow: 0px 8px 16px 0px rgba(255,0,0,0.2); z-index: 1;}
+
+.down-content a { box-shadow: 0px 8px 16px 0px rgba(255,0,0,0.2); color: white; text-decoration: none; display: block; padding:10px;}
+
+.down-content a:hover {background-color: white; color:black;}
+
+.down:hover .down-content {display: block;}
+
+.down:hover .btn { color:rgba(255,255,255,1);}
+
+
+ </style>
+<!--Style Tag Closed-->
+
+</head>
+<!--Head Closed-->
+
+<!--Body Opening-->
+<body style="font-family:century gothic; background-color:black">
+
+ <title>Easy Repair | Ocean Gate Limited(OC)</title>
+
+<!--Background Video-->
+<video autoplay loop muted poster="../Images/Black.png" id="bg2">
+<source src="../Videos/Black.mp4">
+</video>
+
+<!--Container Open-->
+  <div class="container-fluid">
+
+<!--Logo-->
+ <a href="OGL.html"><img src="../Images/Logo1.png" class="infront animated lightSpeediIn" alt="No image found" title="Ocean Gate Limited" style=" position:fixed; height:100px; width:100px; right:0px;"></a><br>
+
+<!--Menu Nav Bar Modal-->
+<!--Menu Nav Bar Modal-->
+   <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#menu" style=" z-index:1; position:fixed; border:2px solid rgba(0,0,0,0); background-color:rgba(0,0,0,0); color:white; font-size:60px;"><i class="fa fa-empire fa-spin"></i></button>
+   <!-- Modal -->
+  <div class="modal animated lightSpeedIn" id="menu" role="dialog">
+   <div class="modal-dialog modal-lg" style="width:75%;">
+    <!-- Modal content-->
+    <div class="modal-content" style=" height:550px; background-image:url(../images/abstrac.jpg); color:white; border:1px solid rgba(255,255,255,0.6);">
+     <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" style="color:white; font-size:30px;"><span class="glyphicon glyphicon-off"></span></button>
+      <h4 class="modal-title" style="font-size:60px;"><b><a href="../Index.html" class="ani"><i class="fa fa-university"></i>Menu</a></b></h4>
+     </div>
+     <div class="modal-body">
+      <div class="navbar-header">
+       <ul class="nav navbar-nav" style=" font-size:20px;"><b>
+        <li><a href="OGL.html" class="ani" style="font-size:30px; margin-left:13px;"><span class="glyphicon glyphicon-king"></span>Ocean Gate</a></li><br>
+        <li><div class="down"> <button class="btn" style="font-size:30px; background-color:rgba(0,0,0,0);"><b> <span class="glyphicon glyphicon-queen"></span>Storage Devices </b></button>
+	<div class="down-content">
+	<a href="cd.html">CD ROMs</a>
+	<a href="hdd.html">Hard Disk Drives</a>
+	<a href="usb.html">USBs</a>
+	<a href="ssd.html">Solid State Drives</a>
+	<a href="sd.html">SD Cards</a>
+	</div> </div> </li><br>
+<li><a href="compare.html" class="ani" style="font-size:30px; margin-left:13px;"><span class="glyphicon glyphicon-pawn"></span>Comparison</a></li><br>
+        <li><a href="Contact.html" class="ani" style="font-size:30px; margin-left:13px;"><span class="glyphicon glyphicon-knight"></span>Contact Us</a></li><br>
+        <li><a href="Feedback.html" class="ani" style="font-size:30px; margin-left:13px;"><span class="glyphicon glyphicon-bishop"></span>Feedback</a></li><br>
+        
+       </b></ul>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+<!--Title-->
+<h1 class="animated lightSpeedIn" style="text-align:center; font-size:100px; color:white; margin-top:200px"><b> Ocean Gate Limited </b></h1>
+<h1 class="animated lightSpeedIn" style="text-align:center; font-size:60px; color:white;"> Gate To The Ocean Of Storage </h1>
+
+<!--Container Open-->
+<div class="container animated lightSpeedIn">
+
+<h1 style="color:white; text-align:center; font-size:100px; margin-top:300px;"> Easy Repair </h1><br><br>
+
+<!--Container Open-->
+<div class="container" style="background-color:rgba(255,255,255,0.3); text-align:center; color:white; border:1px solid white;">
+
+<h1 style="font-size:30px;">"7 Fixes For Corrupt SD Card and Photo Recovery (An Infographic Chart)"</h1>
+<img src="../Images/s8.png" alt="Flowers in Chania">
+<h1 style="font-size:20px;">"Let us have a look at the above fixes in details and see which works best for you"</h1>
+<h1 style="font-size:30px;">"Fix 1: Connect SD card to another device"</h1>
+<p>At times, some of the devices may not read an SD card or they are incompatible to that SD card. In such cases, try to connect your SD card to another device.</p>
+<h1 style="font-size:30px;">"Fix 2: Try chkdsk command"</h1>
+<img src="../Images/s9.jpg" alt="Flowers in Chania">
+<p>Type “chkdsk” followed by drive letter, colon and /f at the command prompt: Insert the affected card into a card reader and connect it to your system. Click on the "Start" option from your Windows taskbar and then select the "Computer” option. Search for your SD card under "Devices with Removable Storage" and note the drive letter assigned.</p><br>
+<p>Next, click the "Start" option again and type "cmd" in the "search" box. Right-click "cmd" and then select the "Run as administrator" option. A command window opens, and you can fix your corrupt memory card from here. Next, type "chkdsk" followed by the drive letter corresponding to the SD card, then by a colon and /f. After you press "enter", the Chkdsk will check for possible errors and try to fix the corrupt SD card. Follow the subsequent message prompts. Lastly, check your assigned drive letter to your SD card to verify if the files are recovered or not.</p>
+<h1 style="font-size:30px;">"Fix 3: Assign a new drive letter"</h1>
+<img src="../Images/s10.jpg" alt="Flowers in Chania">
+<p>Connect your SD card to a card reader to the system, if your system does not assign a new drive letter to it, then it isn't reading it or the card is unreadable. In some cases, the reader might be assigned a drive letter, but still, you get the message "Please insert the disk into drive E:" indicating that it isn't reading the card. To resolve this problem assign a new drive letter to this connected Card through your operating system settings.</p>
+<h1 style="font-size:30px;">"Fix 4: Use Sandisk in-built solution"</h1>
+<p>If none of the files can be read, then possibly the directory will list the filenames, but the files can't be accessed. You can right-click on the drive letter and select "Properties." If you can view the used space on the card and if it shows all or almost all free space, then either all the files have been deleted, or the directory has been erased. In this case, you can use a Sandisk inbuilt solution that might restore all the deleted files easily.</p>
+<h1 style="font-size:20px;">"Fix 5: Format SD card"</h1>
+<img src="../Images/s11.jpg" alt="Flowers in Chania">
+<p>If you can read all the files but cannot save them, then your card might be in write protected mode. Unlock the write-protection switch to save or modify files on the card.</p><br>
+<p>If still, you are unable to read or write to the card, then possibly your files are lost or have become inaccessible. To fix it, you need to use a disk diagnostic tool that can work on memory cards too. Although you can also get access to your card by reformatting it, it will remove everything on the card. Therefore, make sure you have recovered all the stored files and copied everything to another drive before SD Card format.</p>
+<h1 style="font-size:30px;">"Fix 6: Reinstall the driver"</h1>
+<img src="../Images/s12.jpg" alt="Flowers in Chania">
+<p>You can try to reinstall the driver. To do so follow these steps:
+
+Go to and right click on My Computer/ This PC. Click on the option Manage.
+Click on Device Manager option on the left side.
+Double-Click Disk Drives option from the list. Then Right Click on the name of your removable drive.
+Click on Uninstall and click on Ok.
+Disconnect your storage media and restart your PC.
+Reconnect your SD card again. Your PC will detect it.</p>
+<h1 style="font-size:30px;">"Fix 7: Nothing worked? Yes, Recovery Software is your solution!"</h1>
+<img src="../Images/s13.png" alt="Flowers in Chania">
+<p>Whenever an SD card becomes inaccessible or formatted, mostly the stored data gets lost. However, all files remain in the same position on the card and can be recovered by a photo recovery technology. Stellar Phoenix Photo Recovery Software is specially designed to fetch all the lost photos and other media files from their actual place and make them visible. To restore all lost files from an SD card, make sure the card is not physically damaged. Additionally, stop using your SD card before recovery</p>
+
+</div>
+<!--Container Closed-->
+
+<!--Container Open-->
+<div class="container" style=" margin-left:450px;">
+<a href="Repair.html"><h1 class="gg animated25 lightSpeedIn" style="width:20%; height:30px; text-align:center; font-size:20px; border-radius:10px; color:red;"><b> Previous Page... </b></h1></a>
+</div>
+<!--Container Closed-->
+
+
+</div>
+<!--Container Closed-->
+
+<!--Footer Open-->
+ <footer style=" background-image:url('../images/abstract.jpg'); background-size:cover; width:100%; height:240px;" class="animated slideInUp">
+
+<h1 style=" text-align:center; font-size:30px;">Ocean Gate Limited</h1><br>
+
+<form style="text-align:center;">
+<input type="text" id="emailaddress" size="50" required name="emailaddress" required placeholder=" Write your message here..." style=" border-radius:10px; height:50px; background-color:rgba(0,0,0,0.6); border-bottom:2px solid white; color:white;">
+<input type="submit" value="Send" style="height:50px; width:100px; border-radius:10px; border-bottom:2px solid white; color:red;background-color:rgba(0,0,0,0.6);"></a>
+</form>
+
+<div style=" font-family:comic sans MS, cursive, sans-serif; position:relative; margin-left:20px; margin-right:20px; margin-top:50px;">
+  <div style="float:left;">
+   <b style="font-size:18px;">All rights reserved, "Ocean Gate Limited."</b><br>
+   <b style="font-size:18px;">Copyright <i class="fa fa-copyright"></i> 2018</b>
+  </div>
+
+<div style="float:left; margin-left:200px;">
+<a href="Terms.html" target="_blank" style="font-size:25px;">Terms and Conditions!</a>
+</div>
+
+  <div style="float:right;">
+   <b style="font-size:18px;">Connect with us on</b><br>
+   <a href="mailto:aaltamashking@gmail.com" target:"_blank" class="goo" style="margin-left:10px;"><i class="fa fa-envelope-o"></i></a>
+   <a href="https://www.facebook.com/" target="_blank" class="face" style="margin-left:10px;"><i class="fa fa-facebook"></i></a>
+   <a href="https://www.instagram.com/" target="_blank" class="insta" style="margin-left:10px;"><i class="fa fa-instagram"></i></a>
+   <a href="https://www.pinterest.com/" target="_blank" class="pin" style="margin-left:10px;"><i class="fa fa-pinterest-p"></i></a>
+   <a href="https://www.youtube.com/" target="_blank" class="you" style="margin-left:10px;"><i class="fa fa-youtube"></i></a>
+  </div>
+</div>
+
+
+ </footer>
+<!--Footer Closed-->
+
+
+</body>
+<!--Body Closed-->
+
+</html>

@@ -1,0 +1,458 @@
+<!Doctype html>
+<html lang="en">
+
+<!--Head Open-->
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+ <link rel="icon" href="../images/Logo.jpg" type="image" sizes="5x5">
+
+
+<!--Style Tag Open-->
+ <style>
+footer:hover{ opacity:0.9;}
+
+  video#bg2 {
+
+		position:fixed;
+ 		left: 0;
+		bottom: 0px;
+
+		min-width: 100%;
+		min-height: 100%px;
+
+		width: auto;
+		height: auto;
+ 		z-index: -100;
+
+		background: url(Black.png) no-repeat;
+
+		background-size: cover;
+
+		}
+
+  a:link{ color:rgba(255,255,255,1);}
+  a:visited{ color:white;}
+  .goo:hover{ color:orangered;}
+  .face:hover{ color:darkblue;}
+  .insta:hover{ color:purple;}
+  .pin:hover{ color:maroon;}
+  .you:hover{ color:red;}
+  .ani{ color:white;}
+  .ani:hover{ background-color:white; color:black;}
+  h1:hover{background-color:rgba(0,0,0,0.6); border-bottom:1px solid red;}
+  footer{ color:white; font-size:16px; bottom:0px; positon:fixed;}
+  label:hover{background-color:rgba(0,0,0,0.6); border-bottom:1px solid red;}
+  input{border:none;}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes lightSpeedIn {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
+    transform: translate3d(100%, 0, 0) skewX(-30deg);
+    opacity: 0;
+  }
+
+  60% {
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: skewX(-5deg);
+    transform: skewX(-5deg);
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes lightSpeedIn {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
+    transform: translate3d(100%, 0, 0) skewX(-30deg);
+    opacity: 0;
+  }
+
+  60% {
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: skewX(-5deg);
+    transform: skewX(-5deg);
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.lightSpeedIn {
+  -webkit-animation-name: lightSpeedIn;
+  animation-name: lightSpeedIn;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+}
+
+@-webkit-keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInUp {
+  -webkit-animation-name: slideInUp;
+  animation-name: slideInUp;
+}
+
+
+
+
+<!--Dropdown Hover Button-->
+
+.btn {
+    background-color:rgba(0,0,0,0);
+    color: white;
+    padding:20px;
+    font-size: 30px;
+}
+
+.down {
+    position: relative;
+    display: inline-block;
+}
+
+.down-content {margin-left:230px; display: none; position: absolute; background-color: black; min-width: 160px; box-shadow: 0px 8px 16px 0px rgba(255,0,0,0.2); z-index: 1;}
+
+.down-content a { box-shadow: 0px 8px 16px 0px rgba(255,0,0,0.2); color: white; text-decoration: none; display: block; padding:10px;}
+
+.down-content a:hover {background-color: white; color:black;}
+
+.down:hover .down-content {display: block;}
+
+.down:hover .btn { color:rgba(255,255,255,1);}
+input[type=text], select, textarea { background:rgba(0,0,0,0.4); font-family:century gothic; color:white; padding: 12px; outline:none; border:none; box-sizing: border-box; margin-top: 6px; margin-bottom: 16px;
+
+input[type=submit] { background-color:rgba(255,255,255,0.3); color: white; font-family:century gothic; padding: 12px 20px; border: none; border-radius: 4px; cursor: pointer;}
+
+
+ </style>
+<!--Style Tag Closed-->
+
+ <title>Compare Devices | Ocean Gate Limited(OC)</title>
+
+<!--Background Video-->
+<video autoplay loop muted poster="Black.png" id="bg2">
+<source src="../videos/Black.mp4">
+</video>
+
+<!--Container Open-->
+  <div class="container-fluid">
+
+<!--Logo-->
+ <a href="OGL.html"><img src="../images/Logo1.png" class="infront animated lightSpeediIn" alt="No image found" title="Ocean Gate Limited" style=" position:fixed; height:100px; width:100px; right:0px;"></a><br>
+
+<!--Menu Nav Bar Modal-->
+     <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#menu" style=" z-index:1; position:fixed; border:2px solid rgba(0,0,0,0); background-color:rgba(0,0,0,0); color:white; font-size:60px;"><i class="fa fa-empire fa-spin"></i></button>
+   <!-- Modal -->
+  <div class="modal animated lightSpeedIn" id="menu" role="dialog">
+   <div class="modal-dialog modal-lg" style="width:75%;">
+    <!-- Modal content-->
+    <div class="modal-content" style=" height:570px; background-image:url(../images/abstrac.jpg); color:white; border:1px solid rgba(255,255,255,0.6);">
+     <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" style="color:white; font-size:30px;"><span class="glyphicon glyphicon-off"></span></button>
+      <h4 class="modal-title" style="font-size:60px;"><b><a href="../Index.html" class="ani"><i class="fa fa-university"></i>Menu</a></b></h4>
+     </div>
+     <div class="modal-body">
+      <div class="navbar-header">
+       <ul class="nav navbar-nav" style=" font-size:20px;"><b>
+        <li><a href="OGL.html" class="ani" style="font-size:30px; margin-left:13px;"><span class="glyphicon glyphicon-king"></span>Ocean Gate</a></li><br>
+        <li><div class="down"> <button class="btn" style="font-size:30px; background-color:rgba(0,0,0,0);"><b> <span class="glyphicon glyphicon-queen"></span>Storage Devices </b></button>
+	<div class="down-content">
+	<a href="cd.html">CD ROMs</a>
+	<a href="hdd.html">Hard Disk Drives</a>
+	<a href="usb.html">USBs</a>
+	<a href="ssd.html">Solid State Drives</a>
+	<a href="sd.html">SD Cards</a>
+	</div> </div> </li><br>
+<li><a href="Repair.html" class="ani" style="font-size:30px; margin-left:13px;"><span class="glyphicon glyphicon-pawn"></span>Easy Repair</a></li><br>
+        <li><a href="Contact.html" class="ani" style="font-size:30px; margin-left:13px;"><span class="glyphicon glyphicon-knight"></span>Contact Us</a></li><br>
+        <li><a href="Feedback.html" class="ani" style="font-size:30px; margin-left:13px;"><span class="glyphicon glyphicon-bishop"></span>Feedback</a></li><br>
+        
+       </b></ul>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+<!--Title-->
+<h1 class="animated lightSpeedIn" style="text-align:center; font-size:100px; color:white; margin-top:200px"><b> Ocean Gate Limited </b></h1>
+<h1 class="animated lightSpeedIn" style="text-align:center; font-size:60px; color:white;"> Gate To The Ocean Of Storage </h1>
+
+</head>
+<!--Head Closed-->
+
+<!--Body Opening-->
+<body style="font-family:century gothic; background-color:black">
+
+<h1 class="animated lightSpeedIn" style="color:white; text-align:center; font-size:60px; margin-top:300px;"> Compare Different Products </h1><br><br>
+
+<br><br>
+
+<div class="container-fluid">
+
+<div class="col-md-5" align=center>
+
+<input type="text" class="btn btn-lg" list="compare" id="abc" placeholder="Select..." style="text-align:center; color:white; background-color:rgba(0,0,0,0.2); border:1px solid white; display:block">
+<datalist id="compare">
+<option value="HDD WD20PURZ">
+<option value="HDD  ST1000DX002">
+<option value="USB 10000">
+<option value="USB 20000">
+<option value="sd 30000">
+<option value="sd 40000">
+<option value="USB 50000">
+<option value="ssd 60000">
+<option value="ssd 70000">
+<option value="USB 80000">
+<option value="sd 90000">
+<option value="sd 100000">
+</datalist>
+<p id="ans"></p>
+</div>
+
+
+<div class="col-md-2" align=center>
+<input type="button" class="btn btn-lg" onClick="both()" value="Compare!" style="font-size:30px; text-align:center; color:red; background-color:rgba(0,0,0,0.2); border:1px solid white; display:block;">
+</div>
+
+
+<div class="col-md-5" align=center> 
+
+<input type="text" class="btn btn-lg" list="compare1" id="abc1" placeholder="Select..." style="text-align:center; color:white; background-color:rgba(0,0,0,0.2); border:1px solid white; display:block">
+<datalist id="compare1">
+<option value="HDD WD20PURZ">
+<option value="HDD  ST1000DX002">
+<option value="USB 10000">
+<option value="USB 20000">
+<option value="sd 30000">
+<option value="sd 40000">
+<option value="USB 50000">
+<option value="ssd 60000">
+<option value="ssd 70000">
+<option value="USB 80000">
+<option value="sd 90000">
+<option value="sd 100000">
+</datalist>
+
+<p id="ans1"></p>
+ </div>
+
+</div>
+
+</div><br><br><br>
+
+
+<script>
+
+function fun1(){
+	
+	var a=document.getElementById("abc").value;
+	
+	if(a=="HDD WD20PURZ"){
+		document.getElementById("ans").innerHTML="<div style='color:White;font-size:150%'><img src=../images/2.jpg height=300 width=300><br>Name:Kingston Digital<br>Storage Capacity:240Gb A400<br>Speed:00MB/s Read and 350MB/s<br>Price:92.69$<div>";
+		}
+	else if(a=="HDD  ST1000DX002"){
+		document.getElementById("ans").innerHTML="<div style='color:White;font-size:150%'><img src=../images/h66.jpg height=300 width=300><br>Name:Seagate FireCuda ST1000DX002 <br>Storage Capacity:1 TB <br>Speed:64MB Cache SATA 6.0Gb/s 3.5<br>Price:$84.54<div>";
+		}
+	
+	else if(a=="USB 10000"){
+		document.getElementById("ans").innerHTML="<div style='color:White;font-size:150%'><img src=../images/usb1.jpg height=300 width=300><br>Name:Adata 32GB UV-140 USB Flash Drive 3.0<br>Storage Capacity:32 GB<br>Speed:Super Speed USB 3.0 Interface<br>Price:$12.90<div>";
+		}
+		
+	else if(a=="USB 20000"){
+		document.getElementById("ans").innerHTML="<div style='color:White;font-size:150%'><img src=../images/usb2.jpg height=300 width=300><br>Name:Kingston Data Traveler G4<br>Storage Capacity:16 GB<br>Speed:USB 3.0 performance, backwards compatible with USB 2.<br>Price:10.78$<div>";
+		}
+	else if(a=="sd 30000"){
+		document.getElementById("ans").innerHTML="<div style='color:White;font-size:150%'><img src=../images/usb2.jpg height=300 width=300><br>Name:Kingston Data Traveler G4<br>Storage Capacity:16 GB<br>Speed:USB 3.0 performance, backwards compatible with USB 2.<br>Price:10.78$<div>";
+		}
+        else if(a=="sd 40000"){
+		document.getElementById("ans").innerHTML="<div style='color:White;font-size:150%'><img src=../images/d6.jpg height=300 width=300><br>Name:sd<br>Storage Capacity:10 GB<br>Speed:550 MB/s Sequential Read. Up to 520 MB/s <br>Price:25.88$<div>";
+		}
+         else if(a=="USB 50000"){
+		document.getElementById("ans").innerHTML="<div style='color:White;font-size:150%'><img src=../images/s3.jpg height=300 width=300><br>Name:usb<br>Storage Capacity:34 GB<br>Speed:Super Speed USB 6.7 Interface<br>Price:200.0$<div>";
+		}
+         else if(a=="ssd 60000"){
+		document.getElementById("ans").innerHTML="<div style='color:White;font-size:150%'><img src=../images/d10.jpg height=300 width=300><br>Name:ssd<br>Storage Capacity:23 GB<br>Speed:Super Speed  3.9 Interface<br>Price:90.56$<div>";
+		}
+         else if(a=="ssd 70000"){
+		document.getElementById("ans").innerHTML="<div style='color:White;font-size:150%'><img src=../images/d2.jpg height=300 width=300><br>Name:ssd<br>Storage Capacity:6 GB<br>Speed:69MB Cache SATA 5.0Gb/s<br>Price:72.56$<div>";
+		}
+	 else if(a=="USB 80000"){
+		document.getElementById("ans").innerHTML="<div style='color:White;font-size:150%'><img src=../images/s2.jpg height=300 width=300><br>Name:usb<br>Storage Capacity:16 GB<br>Speed:59MB Cache SATA 3.7Gb/s<br>Price:300.0$<div>";
+		}
+         else if(a=="sd 90000"){
+		document.getElementById("ans").innerHTML="<div style='color:White;font-size:150%'><img src=../images/s11.jpg height=300 width=300><br>Name:sd<br>Storage Capacity:8 GB<br>Speed:460 MB/s Sequential Read. Up to 335 MB/s<br>Price:70.0$<div>";
+		}
+         else if(a=="sd 100000"){
+		document.getElementById("ans").innerHTML="<div style='color:White;font-size:150%'><img src=../images/s5.jpg height=300 width=300><br>Name:sd<br>Storage Capacity:16 GB<br>Speed:890 MB/s Sequential Read. Up to 476 MB/s<br>Price:89.0$<div>";
+		}
+	else{
+		
+		document.getElementById("ans").innerHTML="<div style='color:White;font-size:150%'>Invalid</div>";
+		}
+
+	}
+
+function fun2(){
+	
+	var b=document.getElementById("abc1").value;
+	
+	if(b=="HDD WD20PURZ"){
+		document.getElementById("ans1").innerHTML="<div style='color:White;font-size:150%'><img src=../images/2.jpg height=300 width=300><br>Name:Kingston Digital<br>Storage Capacity:240Gb A400<br>Speed:00MB/s Read and 350MB/s<br>Price:$92.69<div>";
+		}
+	
+	else if(b=="HDD  ST1000DX002"){
+		document.getElementById("ans1").innerHTML="<div style='color:White;font-size:150%'><img src=../images/h66.jpg height=300 width=300><br>Name:Seagate FireCuda ST1000DX002 <br>Storage Capacity:1 TB <br>Speed:64MB Cache SATA 6.0Gb/s 3.5<br>Price:$84.54<div>";
+		}
+	
+	else if(b=="USB 10000"){
+		document.getElementById("ans1").innerHTML="<div style='color:White;font-size:150%'><img src=../images/usb1.jpg height=300 width=300><br>Name:Adata 32GB UV-140 USB Flash Drive 3.0<br>Storage Capacity:32 GB<br>Speed:Super Speed USB 3.0 Interface<br>Price:$12.90<div>";
+		}
+		
+		
+	else if(b=="USB 20000"){
+		document.getElementById("ans1").innerHTML="<div style='color:White;font-size:150%'><img src=../images/usb2.jpg height=300 width=300><br>Name:Kingston Data Traveler G4<br>Storage Capacity:16 GB<br>Speed:USB 3.0 performance, backwards compatible with USB 2.<br>Price:10.78$<div>";
+		}
+        else if(b=="sd 30000"){
+		document.getElementById("ans1").innerHTML="<div style='color:White;font-size:150%'><img src=../images/d5.jpg height=300 width=300><br>Name:sd<br>Storage Capacity:dfsdf<br>Speed:550 MB/s Sequential Read. Up to 520 MB/s <br>Price:45.78$<div>";
+		}
+        else if(b=="sd 40000"){
+		document.getElementById("ans1").innerHTML="<div style='color:White;font-size:150%'><img src=../images/d6.jpg height=300 width=300><br>Name:sd<br>Storage Capacity:10 GB<br>Speed:Super Speed USB 6.7 Interface<br>Price:25.88$<div>";
+		}
+        else if(b=="USB 50000"){
+		document.getElementById("ans1").innerHTML="<div style='color:White;font-size:150%'><img src=../images/s3.jpg height=300 width=300><br>Name:usb<br>Storage Capacity:34 GB<br>Speed:lSuper Speed USB 3.9 Interface<br>Price:200.0$<div>";
+		}
+       else if(b=="ssd 60000"){
+		document.getElementById("ans1").innerHTML="<div style='color:White;font-size:150%'><img src=../images/d10.jpg height=300 width=300><br>Name:ssd<br>Storage Capacity:23 GB<br>Speed:69MB Cache SATA 5.0Gb/s<br>Price:90.56$<div>";
+		}
+       else if(b=="ssd 70000"){
+		document.getElementById("ans1").innerHTML="<div style='color:White;font-size:150%'><img src=../images/d2.jpg height=300 width=300><br>Name:ssd<br>Storage Capacity:6 GB<br>Speed:59MB Cache SATA 3.7Gb/s<br>Price:72.56$<div>";
+		}
+       else if(b=="USB 80000"){
+		document.getElementById("ans1").innerHTML="<div style='color:White;font-size:150%'><img src=../images/s2.jpg height=300 width=300><br>Name:usb<br>Storage Capacity:16 GB<br>Speed:69MB Cache SATA 5.0Gb/s<br>Price:300.0$<div>";
+		}
+       else if(b=="sd 90000"){
+		document.getElementById("ans1").innerHTML="<div style='color:White;font-size:150%'><img src=../images/s11.jpg height=300 width=300><br>Name:sd<br>Storage Capacity:8 GB<br>Speed:460 MB/s Sequential Read. Up to 335 MB/s<br>Price:70.0$<div>";
+		}
+       else if(b=="sd 100000"){
+		document.getElementById("ans1").innerHTML="<div style='color:White;font-size:150%'><img src=../images/s5.jpg height=300 width=300><br>Name:sd<br>Storage Capacity:16 GB<br>Speed:890 MB/s Sequential Read. Up to 476 MB/s<br>Price:89.0$<div>";
+		}
+	
+	else{
+		
+		document.getElementById("ans1").innerHTML="<div style='color:White;font-size:150%'>Invalid</div>";
+		}
+	
+	
+	}
+
+function both(){
+    fun1();
+    fun2();
+}
+
+
+</script>
+
+</div>
+<br><br><br><br>
+<br><br><br><br>
+
+<!--Footer Open-->
+ <footer style=" background-image:url('../images/abstract.jpg'); background-size:cover; width:100%; height:240px;" class="animated slideInUp">
+
+<h1 style=" text-align:center; font-size:30px;">Ocean Gate Limited</h1><br>
+
+<form style="text-align:center;">
+<input type="text" id="emailaddress" size="50" required name="emailaddress" required placeholder=" Write your message here..." style=" border-radius:10px; height:50px; background-color:rgba(0,0,0,0.6); border-bottom:2px solid white; color:white;">
+<input type="submit" value="Send" style="height:50px; width:100px; border-radius:10px; border-bottom:2px solid white; color:red;background-color:rgba(0,0,0,0.6);"></a>
+</form>
+
+<div style=" font-family:comic sans MS, cursive, sans-serif; position:relative; margin-left:20px; margin-right:20px; margin-top:50px;">
+  <div style="float:left;">
+   <b style="font-size:18px;">All rights reserved, "Ocean Gate Limited."</b><br>
+   <b style="font-size:18px;">Copyright <i class="fa fa-copyright"></i> 2018</b>
+  </div>
+
+<div style="float:left; margin-left:200px;">
+<a href="Terms.html" target="_blank" style="font-size:25px;">Terms and Conditions!</a>
+</div>
+
+  <div style="float:right;">
+   <b style="font-size:18px;">Connect with us on</b><br>
+   <a href="mailto:aaltamashking@gmail.com" target:"_blank" class="goo" style="margin-left:10px;"><i class="fa fa-envelope-o"></i></a>
+   <a href="https://www.facebook.com/" target="_blank" class="face" style="margin-left:10px;"><i class="fa fa-facebook"></i></a>
+   <a href="https://www.instagram.com/" target="_blank" class="insta" style="margin-left:10px;"><i class="fa fa-instagram"></i></a>
+   <a href="https://www.pinterest.com/" target="_blank" class="pin" style="margin-left:10px;"><i class="fa fa-pinterest-p"></i></a>
+   <a href="https://www.youtube.com/" target="_blank" class="you" style="margin-left:10px;"><i class="fa fa-youtube"></i></a>
+  </div>
+</div>
+
+
+ </footer>
+<!--Footer Closed-->
+
+
+</body>
+<!--Body Closed-->
+
+</html>
+

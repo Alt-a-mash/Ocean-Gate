@@ -1,0 +1,223 @@
+﻿<!Doctype html>
+<html lang="en">
+
+<!--Head Open-->
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="icon" href="Images/Logo.jpg" type="image" sizes="5x5">
+
+
+ <script> 
+  $(window).on('load',function(){ $("#1").animate( {right:'0px', width: '0px'}, 1500 );
+                                  $("#2").animate( {right:'0px', width: '0px'}, 1000 );
+                                  $("#3").animate( {right:'0px', width: '0px'}, 500 ); })
+ </script> 
+
+<!--Style Tag Open-->
+ <style>
+
+   video#vid1 {
+
+		position:fixed;
+ 		left: 0;
+		bottom: 0;
+
+		min-width: 100%;
+		min-height: 100%;
+		width: auto;
+		height: auto;
+ 		z-index: -100;
+
+		background: url(Animation.png) no-repeat;
+
+		background-size: cover;
+
+
+				}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated1 {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-delay:1s;
+}
+
+.animated15 {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-delay:1.5s;
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes lightSpeedIn {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
+    transform: translate3d(100%, 0, 0) skewX(-30deg);
+    opacity: 0;
+  }
+
+  60% {
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: skewX(-5deg);
+    transform: skewX(-5deg);
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes lightSpeedIn {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
+    transform: translate3d(100%, 0, 0) skewX(-30deg);
+    opacity: 0;
+  }
+
+  60% {
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: skewX(-5deg);
+    transform: skewX(-5deg);
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.lightSpeedIn {
+  -webkit-animation-name: lightSpeedIn;
+  animation-name: lightSpeedIn;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+}
+
+  .ani{ color:white;}
+  .ani:hover{ background-color:white; color:black; box-shadow: 0px 8px 16px 0px rgba(255,0,0,0.3);}
+  h1:hover{background-color:rgba(0,0,0,0.6); border-bottom:1px solid red;}
+
+
+<!--Dropdown Hover Button-->
+
+.btn {
+    background-color:rgba(0,0,0,0);
+    color: white;
+    padding:20px;
+    font-size: 30px;
+}
+
+.down {
+    position: relative;
+    display: inline-block;
+}
+
+.down-content {margin-left:230px; display: none; position: absolute; background-color: black; min-width: 160px; box-shadow: 0px 8px 16px 0px rgba(255,0,0,0.2); z-index: 1;}
+
+.down-content a { box-shadow: 0px 8px 16px 0px rgba(255,0,0,0.2); color: white; text-decoration: none; display: block; padding:10px;}
+
+.down-content a:hover {background-color: white; color:black;}
+
+.down:hover .down-content {display: block;}
+
+.down:hover .btn { color:rgba(255,255,255,1);}
+
+ </style>
+<!--Style Tag Closed-->
+
+<!--Opening Slideshow-->
+  <div id="1" style="background:skyblue;height:100%;width:100%;position:absolute;top:0px; z-index:1;"></div>
+  <div id="2" style="background:white;height:100%;width:100%;position:absolute;top:0px; z-index:1;"></div>
+  <div id="3" style="background:skyblue;height:100%;width:100%;position:absolute;top:0px; z-index:1;"></div>
+
+
+<!--Title-->
+ <title>Gate to the Ocean's Storage | Ocean Gate Limited(OC)</title>
+
+<!--Container Open-->
+ <div class="container-fluid">
+
+<!--Menu Bar Modal-->
+   <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#menu" style=" border:2px solid rgba(0,0,0,0); background-color:rgba(0,0,0,0); color:white; font-size:60px; z-index:1;"><i class="fa fa-empire fa-spin"></i></button>
+   <!-- Modal -->
+  <div class="modal animated lightSpeedIn" id="menu" role="dialog">
+   <div class="modal-dialog modal-lg" style="width:75%;">
+    <!-- Modal content-->
+    <div class="modal-content" style=" height:570px; background-image:url(images/abstrac.jpg); color:white; border:1px solid rgba(255,255,255,0.6);">
+     <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" style="color:white; font-size:30px;"><span class="glyphicon glyphicon-off"></span></button>
+      <h4 class="modal-title" style="font-size:60px;"><b><a href="Index.html" class="ani"><i class="fa fa-university"></i>Menu</a></b></h4>
+     </div>
+     <div class="modal-body">
+      <div class="navbar-header">
+       <ul class="nav navbar-nav" style=" font-size:20px;"><b>
+        <li><a href="pages/OGL.html" class="ani" style="font-size:30px; margin-left:13px;"><span class="glyphicon glyphicon-king"></span>Ocean Gate</a></li><br>
+        <li><div class="down"> <button class="btn" style="font-size:30px; background-color:rgba(0,0,0,0);"><b> <span class="glyphicon glyphicon-queen"></span>Storage Devices </b></button>
+	<div class="down-content">
+	<a href="pages/cd.html">CD ROMs</a>
+	<a href="pages/hdd.html">Hard Disk Drives</a>
+	<a href="pages/usb.html">USBs</a>
+	<a href="pages/ssd.html">Solid State Drives</a>
+	<a href="pages/sd.html">SD Cards</a>
+	</div> </div> </li><br>
+        <li><a href="pages/Compare.html" class="ani" style="font-size:30px; margin-left:13px;"><span class="glyphicon glyphicon-pawn"></span>Comparison</a></li><br>
+        <li><a href="pages/Repair.html" class="ani" style="font-size:30px; margin-left:13px;"><span class="glyphicon glyphicon-pawn"></span>Easy Repair</a></li><br>
+        <li><a href="pages/Contact.html" class="ani" style="font-size:30px; margin-left:13px;"><span class="glyphicon glyphicon-knight"></span>Contact Us</a></li><br>
+        <li><a href="pages/Feedback.html" class="ani" style="font-size:30px; margin-left:13px;"><span class="glyphicon glyphicon-bishop"></span>Feedback</a></li><br>
+       </b></ul>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+
+</head>
+
+<body style="font-family:century gothic; background-color:black">
+
+<h1 class="animated1 lightSpeedIn" style="text-align:center; font-size:100px; color:white; margin-top:100px"><b> Ocean Gate Limited </b></h1>
+<h1 class="animated15 lightSpeedIn" style="text-align:center; font-size:60px; color:white;"> Gate To The Ocean Of Storage </h1>
+
+<video autoplay muted loop id="vid1" poster="Animation.png">
+  <source src="videos/Electronics.mp4" type="video/mp4">
+</video>
+
+
+</body>
+
+</html>
